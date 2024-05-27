@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* -----CONSTANTS CONSTANTS CONSTANTS----- */
+  /* FONT */
+  --font: "Poppins", sans-serif;
+
+  /* COLORS */
+  --primaryColorGreen: #1dd48b;
+  --primaryColorGreen100: #0b1814;
+  --primaryColorGreen200: #173f30;
+  --primaryColorGreen300: #1e6b4d;
+  --primaryColorGreen400: #209d6b;
+  --primaryColorGreen600: #33f0a4;
+  --primaryColorGreen700: #5afcbb;
+  --primaryColorGreen800: #8affd0;
+  --primaryColorGreen900: #f0fff9;
+  --primaryColorNeutral: #cad9d3;
+  --primaryColorNeutral100: #b0b5b4;
+  --primaryColorNeutral200: #b6bebc;
+  --primaryColorNeutral300: #bcc8c4;
+  --primaryColorNeutral400: #c2d0cb;
+  --primaryColorNeutral600: #d1e0da;
+  --primaryColorNeutral700: #dae7e2;
+  --primaryColorNeutral800: #e3eee9;
+  --primaryColorNeutral900: #ecf4f0;
+  --primaryColorBlack: #000000;
+  --primaryColorBlack100: #122b20;
+
+  --primaryColorWhite: #ffffff;
+
+  /* BACKGROUND COLOR */
+  --primaryBgColor: #f0fff9;
+
+  /* TEXT COLOR */
+  --primaryTextColor: #173f30;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: var(--font);
+  scroll-behavior: smooth;
+  min-width: 425px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  margin: 0 auto;
+  max-width: 1040px;
+  height: 100%;
 }
