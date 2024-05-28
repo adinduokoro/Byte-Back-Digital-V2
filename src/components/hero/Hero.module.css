@@ -27,6 +27,10 @@
   width: 100%;
 }
 
+.hero-content h1, p{
+  color: var(--primaryBackgroundColor);
+}
+
 .hero-image {
   position: absolute;
   width: 42.6875rem;

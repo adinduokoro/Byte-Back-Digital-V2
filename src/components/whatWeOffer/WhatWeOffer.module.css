@@ -4,6 +4,33 @@
     width: 100%;
 }
 
+.what-we-offer-content{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-offer-content h2{
+    color: var(--primaryColorGreen);
+}
+
+.what-we-offer-content span{
+    color: var(--primaryColorGreen100);
+}
+
+.what-we-offer-content p{
+    color: var(--primaryColorGreen200);
+}
+
+.what-we-offer-description{
+    text-align: center;
+    max-width: 38.0625rem;
+}
+
 
 
 /* .hero-content {

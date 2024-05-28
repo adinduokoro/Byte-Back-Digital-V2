@@ -19,7 +19,7 @@
   height: 5.385rem;
 }
 
-.nav-links {
+.navigation-content ul {
   display: flex;
   max-width: 37.1875rem;
   width: 100%;
