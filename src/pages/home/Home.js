@@ -1,13 +1,17 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Hero, WhatWeOffer } from "../../components";
+import { Hero, PaymentPlan, WhatWeOffer } from "../../components";
 
 const Home = () => {
   return (
     <section className={styles.home}>
       <Hero />
       <WhatWeOffer />
-      {/* payment plan */}
+      <PaymentPlan />
+      {/* portfolio */}
+      {/* whoweare */}
+      {/* blog */}
+      {/* plan options */}
     </section>
   );
 };

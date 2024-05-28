@@ -1,43 +1,64 @@
-.what-we-offer{
-    position: relative;
-    height: 37.390625rem;
-    width: 100%;
+.what-we-offer {
+  position: relative;
+  height: 37.390625rem;
+  width: 100%;
 }
 
-.what-we-offer-content{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.what-we-offer-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.what-we-offer-content h2{
-    color: var(--primaryColorGreen);
+.page-ruler {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.05rem;
 }
 
-.what-we-offer-content span{
-    color: var(--primaryColorGreen100);
+.ruler {
+  width: 5rem;
+  height: 0.0625rem;
+  background-color: var(--primaryColorGreen);
 }
 
-.what-we-offer-content p{
-    color: var(--primaryColorGreen200);
+.what-we-offer-content h2 {
+  color: var(--primaryColorGreen);
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
 }
 
-.what-we-offer-description{
-    text-align: center;
-    max-width: 38.0625rem;
+.what-we-offer-content span {
+  color: var(--primaryColorGreen100);
 }
 
+.what-we-offer-content p {
+  color: var(--primaryColorGreen200);
+}
 
+.description {
+  text-align: center;
+  max-width: 38.0625rem;
+  margin-bottom: 5.87rem;
+}
 
-/* .hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 11.6875rem;
-    max-width: 31.5625rem;
-    width: 100%;
-  } */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card {
+  width: 17.5rem;
+  height: 14.8125rem;
+  text-align: center;
+}
+
+.card img,
+.card h3 {
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
