@@ -10,7 +10,7 @@ const Hero = () => {
         <BackgroundPieceOne />
       </div>
       <div className="container">
-        {/* navigation */}
+        {/* navigation  */}
         {/* hero content */}
       </div>
     </section>
