@@ -1,0 +1,32 @@
+.navigation {
+  border: 1px solid green;
+  height: 7.885rem;
+  width: 100%;
+}
+
+.navigation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
+  min-width: 9.94488rem;
+  cursor: pointer;
+  height: 5.385rem;
+}
+
+.nav-links {
+  border: 1px solid green;
+  display: flex;
+  max-width: 37.1875rem;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--primaryBackgroundColor);
+  z-index: 5;
+}
+
+.nav-links li{
+    font-weight: 700;
+}
