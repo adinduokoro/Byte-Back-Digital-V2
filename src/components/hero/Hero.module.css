@@ -1,3 +1,7 @@
+section {
+  margin-top: 0px !important;
+}
+
 .hero {
   position: relative;
   height: 56.25rem;
@@ -11,4 +15,27 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  background: linear-gradient(
+    301deg,
+    var(--primaryColorGreen600) 34.39%,
+    var(--primaryColorGreen200) 100%
+  );
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 11.6875rem;
+  max-width: 31.5625rem;
+  width: 100%;
+}
+
+.hero-image {
+  position: absolute;
+  width: 42.6875rem;
+  height: 38.625rem;
+  right: 0;
+  top: 0;
+  margin-top: 13.1875rem;
 }

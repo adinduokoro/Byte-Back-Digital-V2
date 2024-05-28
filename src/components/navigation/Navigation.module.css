@@ -1,5 +1,7 @@
 .navigation {
-  border: 1px solid green;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 7.885rem;
   width: 100%;
 }
@@ -18,15 +20,14 @@
 }
 
 .nav-links {
-  border: 1px solid green;
   display: flex;
   max-width: 37.1875rem;
   width: 100%;
   justify-content: space-between;
-  color: var(--primaryBackgroundColor);
+  color: var(--primaryBackgroundColor) !important;
   z-index: 5;
 }
 
-.nav-links li{
-    font-weight: 700;
+.nav-links li {
+  font-weight: 700;
 }
