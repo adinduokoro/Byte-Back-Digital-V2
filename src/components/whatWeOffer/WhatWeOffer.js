@@ -1,10 +1,20 @@
-import React from 'react'
-import styles from "./WhatWeOffer.module.css"
+import React from "react";
+import styles from "./WhatWeOffer.module.css";
 
 const WhatWeOffer = () => {
   return (
-    <div>WhatWeOffer</div>
-  )
-}
+    <section className={styles["what-we-offer"]}>
+      <div className="container">
+        <div className={styles["what-we-offer-content"]}>
+          hello world
+          {/* h2 */}
+          {/* ruler */}
+          {/* p */}
+          {/* offer cards */}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default WhatWeOffer
+export default WhatWeOffer;
