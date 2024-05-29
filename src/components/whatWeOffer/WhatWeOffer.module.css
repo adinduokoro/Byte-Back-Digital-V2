@@ -12,33 +12,6 @@
   align-items: center;
 }
 
-.page-ruler {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.ruler {
-  width: 5rem;
-  height: 0.0625rem;
-  background-color: var(--primaryColorGreen);
-}
-
-.page-ruler img {
-  width: 1.88938rem;
-  height: 1.88938rem;
-}
-
-.what-we-offer-content h2 {
-  color: var(--primaryColorGreen);
-  margin-bottom: 0.25rem;
-  white-space: nowrap;
-}
-
-.what-we-offer-content span {
-  color: var(--primaryColorGreen100);
-}
-
 .what-we-offer-content p {
   color: var(--primaryColorGreen200);
 }

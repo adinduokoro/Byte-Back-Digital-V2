@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./WhatWeOffer.module.css";
-import rulerMark from "../../assets/ruler-mark.svg";
+import codeIcon from "../../assets/ruler-mark.svg";
+import { SectionTitle } from "../../components";
 import { cards } from "./data";
 
 const WhatWeOffer = () => {
@@ -8,19 +9,11 @@ const WhatWeOffer = () => {
     <section className={styles["what-we-offer"]}>
       <div className="container">
         <div className={styles["what-we-offer-content"]}>
-
-
-
-          <h2>
-            WHAT <span>WE OFFER</span>
-          </h2>
-          <div className={styles["page-ruler"]}>
-            <div className={styles.ruler}></div>
-            <img src={rulerMark} alt="Ruler Mark" />
-            <div className={styles.ruler}></div>
-          </div>
-
-
+          <SectionTitle
+            firstWord={"WHAT"}
+            secondWord={"WE OFFER"}
+            image={codeIcon}
+          />
 
           <p className={styles["description"]}>
             We focus on crafting web design and development solutions for small
@@ -28,6 +21,7 @@ const WhatWeOffer = () => {
             performance and increased brand awareness, attracting more visitors,
             and boosting your profits.
           </p>
+          
           <div className={styles.cards}>
             {cards.map((card, index) => (
               <div className={styles.card} key={index}>
