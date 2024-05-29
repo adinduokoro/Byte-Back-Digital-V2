@@ -5,3 +5,4 @@ export { default as SectionTitle } from "./sectionTitle/SectionTitle";
 export { default as WhatWeOffer } from "./whatWeOffer/WhatWeOffer";
 export { default as PaymentPlan } from "./paymentPlan/PaymentPlan";
 export { default as Portfolio } from "./portfolio/Portfolio";
+export { default as WhoWeAre } from "./whoWeAre/WhoWeAre";
