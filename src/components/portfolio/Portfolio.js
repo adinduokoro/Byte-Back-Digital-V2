@@ -10,8 +10,8 @@ const Portfolio = () => {
       <div className="container">
         <div className={styles["portfolio-content"]}>
           <SectionTitle
-            firstWord={"OUR"}
-            secondWord={"PORTFOLIO"}
+            firstWord="OUR"
+            secondWord="PORTFOLIO"
             image={desktopIcon}
           />
           <div className={styles.portfolios}>
@@ -19,9 +19,9 @@ const Portfolio = () => {
               <div className={styles["portfolio-card"]} key={index}>
                 <img src={portfolio.image} alt="" />
                 <h3>{portfolio.title}</h3>
-                <p>{portfolio.subtitle}</p>
+                <h4>{portfolio.subtitle}</h4>
                 <p>{portfolio.description}</p>
-                <button>VISIT PAGE</button>
+                <button className="btn-two">VISIT PAGE</button>
               </div>
             ))}
           </div>
