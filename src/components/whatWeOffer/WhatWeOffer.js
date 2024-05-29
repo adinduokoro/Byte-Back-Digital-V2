@@ -8,6 +8,9 @@ const WhatWeOffer = () => {
     <section className={styles["what-we-offer"]}>
       <div className="container">
         <div className={styles["what-we-offer-content"]}>
+
+
+
           <h2>
             WHAT <span>WE OFFER</span>
           </h2>
@@ -16,6 +19,9 @@ const WhatWeOffer = () => {
             <img src={rulerMark} alt="Ruler Mark" />
             <div className={styles.ruler}></div>
           </div>
+
+
+
           <p className={styles["description"]}>
             We focus on crafting web design and development solutions for small
             businesses across the US. Our hand-coded websites ensure optimal
