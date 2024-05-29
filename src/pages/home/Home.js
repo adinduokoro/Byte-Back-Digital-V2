@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Hero, PaymentPlan, WhatWeOffer } from "../../components";
+import { Hero, PaymentPlan, Portfolio, WhatWeOffer } from "../../components";
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <Hero />
       <WhatWeOffer />
       <PaymentPlan />
-      {/* portfolio */}
+      <Portfolio />
       {/* whoweare */}
       {/* blog */}
       {/* plan options */}
