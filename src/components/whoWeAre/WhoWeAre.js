@@ -13,12 +13,12 @@ const WhoWeAre = () => {
             secondWord={"WE ARE"}
             image={personIcon}
           />
-          <p>
-            I'm Adi, a dedicated stay-at-home dad and passionate web developer.
-            I launched this business to support my family while staying present
-            for my kid. After a year and a half of self-taught web design and
-            coding, I've now been professionally crafting websites for over five
-            years, perfecting my process with each of the hundreds I've built.
+          <p className={styles.about}>
+            I'm Adi, a committed stay-at-home dad and enthusiastic web
+            developer. I started this business to support my family while being
+            present for my child. After a year and a half of teaching myself web
+            design and coding, I've now been professionally creating websites
+            for over five years, continuously perfecting my craft.
           </p>
           {/* picture */}
           {/* name */}
