@@ -26,12 +26,29 @@
     width: 18.75rem;
     height: 31.25rem;
     padding: 0 2.19rem;
+    overflow: hidden;
     border: 1px solid var(--primaryColorNeutral600);
-    margin-top: 2rem;
+    background: white; 
+  }
+  
+  .plan:nth-child(1) {
+    border-radius: 0.5rem 0 0 0.5rem;
   }
   
   .plan:nth-child(2) {
     transform: scale(1.2);
+    border-radius: 0.6rem;
+    border: 1.2px solid var(--primaryColorNeutral600);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+  }
+  
+  .plan:nth-child(2) .plan-title-container {
+    background:  #A7FFA4;
+  }
+  
+  .plan:nth-child(3) {
+    border-radius: 0 0.5rem 0.5rem 0;
   }
   
   .plan-title-container {
