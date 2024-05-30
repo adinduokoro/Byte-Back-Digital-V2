@@ -3,6 +3,8 @@ export const paymentOptions = [
     title: "E-COMMERCE",
     subTitle: "STARTING AT",
     price: "5k",
+    perMonth: false,
+
     perks: [
       "$5000 min. up Front Cost",
       "Custom Designed",
@@ -14,6 +16,7 @@ export const paymentOptions = [
     title: "STANDARD",
     subTitle: "5 PAGES",
     price: "150",
+    perMonth: true,
     perks: [
       "Unlimited Edits",
       "Includes Hosting",
@@ -25,6 +28,7 @@ export const paymentOptions = [
     title: "LOGOS & GRAPHIC DESIGN",
     subTitle: "INCLUDED!",
     price: "0",
+    perMonth: false,
     perks: [
       "3 revisions",
       "All file Formats",
