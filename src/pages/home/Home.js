@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Hero, PaymentPlan, Portfolio, WhatWeOffer, WhoWeAre } from "../../components";
+import { Hero, PaymentPlan, Portfolio, WhatWeOffer, WhoWeAre, Blog } from "../../components";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <PaymentPlan />
       <Portfolio />
       <WhoWeAre />
-      {/* blog */}
+      <Blog />
       {/* plan options */}
     </section>
   );

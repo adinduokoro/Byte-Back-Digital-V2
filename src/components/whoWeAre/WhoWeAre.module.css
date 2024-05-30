@@ -1,17 +1,58 @@
-/* .what-we-offer {
+.who-we-are {
   position: relative;
-  height: 37.390625rem;
+  height: 54.125rem;
   width: 100%;
 }
 
-.what-we-offer-content {
+.who-we-are-content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
   align-items: center;
 }
 
-.what-we-offer-content p {
-  color: var(--primaryColorGreen200);
-} */
+.about {
+  margin: 2.05rem 0 6.01rem;
+  text-align: center;
+  max-width: 37.5rem;
+}
+
+.profile-container {
+  position: relative;
+  width: 19.60794rem;
+  height: 19.25rem;
+  margin-bottom: 2.05rem;
+}
+
+.profile-container img,
+.profile-container-background {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-container img {
+  position: absolute;
+  width: 18.38038rem;
+  height: 18.625rem;
+}
+
+.profile-container-background {
+  position: absolute;
+  width: 19.60794rem;
+  height: 18.625rem;
+  flex-shrink: 0;
+  z-index: -1;
+}
+
+.who-we-are-content h3 {
+  color: var(--primaryColorGreen100);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.who-we-are-content h4 {
+  color: var(--primaryColorNeutral100);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}

@@ -10,7 +10,7 @@ const SectionTitle = ({ firstWord, secondWord, image }) => {
       <div className={styles["page-ruler"]}>
         <div className={styles.ruler}></div>
         <div className={styles["image-container"]}>
-        <img src={image} alt="Ruler Mark" />
+          <img src={image} alt="Ruler Mark" />
         </div>
         <div className={styles.ruler}></div>
       </div>
