@@ -4,7 +4,7 @@ import { Hero, PaymentPlan, Portfolio, WhatWeOffer, WhoWeAre, Blog, CustomerPlan
 
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <div className={styles.home}>
       <Hero />
       <WhatWeOffer />
       <PaymentPlan />
@@ -12,7 +12,7 @@ const Home = () => {
       <WhoWeAre />
       <Blog />
       <CustomerPlanOptions />
-    </section>
+    </div>
   );
 };
 

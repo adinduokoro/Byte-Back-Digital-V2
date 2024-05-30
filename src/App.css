@@ -52,6 +52,7 @@ body {
 
 /* Section styles */
 section {
+  border: 1px solid black;
   position: relative;
   display: flex;
   justify-content: center;
