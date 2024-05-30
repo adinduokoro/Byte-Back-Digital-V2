@@ -2,7 +2,7 @@ export const paymentOptions = [
   {
     title: "E-COMMERCE",
     subTitle: "STARTING AT",
-    price: "5k",
+    price: "3k",
     perMonth: false,
 
     perks: [
