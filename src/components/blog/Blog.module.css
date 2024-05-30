@@ -1,12 +1,27 @@
-/* .who-we-are {
+.blog{
+    border: 1px solid black;
     position: relative;
-    height: 54.125rem;
+    height: 43.0625rem;
     width: 100%;
-  }
-  
-  .who-we-are-content {
+}
+
+.blog-content{
+    height: 100%;
+}
+
+.blogs{
+    margin-top: 2.05rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-card{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    align-items: center;
-  } */
+    width: 18.125rem;
+    height: 30.625rem;
+    border-radius: 0.5rem;
+    border-top: 4px solid var(--primaryColorGreen);
+    box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.08);
+    padding: 0 1.62rem;
+}
