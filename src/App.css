@@ -52,13 +52,11 @@ body {
 
 /* Section styles */
 section {
-  border: 1px solid black;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 4.5rem;
 }
 
 /* Container styles */
