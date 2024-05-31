@@ -29,7 +29,31 @@ const BackgroundPieceOne = () => {
 
 // Second component definition
 const BackgroundPieceTwo = () => {
-  return <div></div>;
+  return (
+    <svg
+      width="1440"
+      height="792"
+      preserveAspectRatio="none"
+      viewBox="0 0 1440 792"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{
+        position: "absolute",
+        top: "0",
+        left: "0",
+        minWidth: "90rem",
+        minHeight: "49.49056rem",
+        width: "100%",
+      }}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1440 2.29407V0H0V528.543C73.2519 613.216 198.553 648.382 348.256 606.564C499.681 852.536 758.364 852.536 900.324 612.953C1168.47 670.453 1345.13 478.786 1272.58 204.063C1361.62 148.302 1417.16 77.1175 1440 2.29407Z"
+        fill="var(--primaryBackgroundColor)"
+      />
+    </svg>
+  );
 };
 
 // Export FirstComponent as named export
