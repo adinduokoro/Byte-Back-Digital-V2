@@ -1,8 +1,8 @@
 .footer {
   position: relative;
-  height: auto;
+  height: 100%;
   width: 100%;
-  margin-top: -4px;
+  margin-top: -3.85px;
 }
 
 .footer-container {
@@ -108,37 +108,60 @@
 }
 
 .toggle-container {
+  box-sizing: border-box;
   background: 0 0;
+  border: none;
   height: 40px;
   width: 30px;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .toggler-container {
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  color: #646464;
+  margin: 0;
   width: 30px;
   height: 16px;
   border-radius: 10px;
   background: 0 0;
-  border: 3px solid var(--primaryBackgroundColor);
-  display: flex;
-  align-items: center;
+  border: 3px solid #fff;
+  -webkit-box-align: center;
+  transition: .3s ease;
+  -webkit-box-pack: center;
   justify-content: center;
-  transition: 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  align-items: center;
   transform: rotate(90deg);
 }
 
 .toggler-container span {
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  color: #646464;
+  margin: 0;
   height: 20px;
   width: 20px;
   left: -8px;
   border-radius: 50%;
-  background: var(--primaryBackgroundColor);
+  background: #fff;
   position: absolute;
-  transition: 0.3s ease;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  transition: .3s ease;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.75);
 }
 
 .toggle-content p {

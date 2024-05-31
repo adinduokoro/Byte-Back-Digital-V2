@@ -6,7 +6,7 @@ export const paymentOptions = [
     perMonth: false,
 
     perks: [
-      "$5000 min. up Front Cost",
+      "3000 min. up Front Cost",
       "Custom Designed",
       "Shopify or Stripe Integration",
       "Admin Capabilities",

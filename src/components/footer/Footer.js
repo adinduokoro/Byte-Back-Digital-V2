@@ -25,9 +25,9 @@ const Footer = () => {
                   <div className={styles.bulb}></div>
                 </div>
 
-                <button className={styles["toggle-container"]}>
-                  <span className={styles["toggler-container"]}>
-                    <span className={styles.DTspan}></span>
+                <button className="toggle-container">
+                  <span className="toggler-container">
+                    <span className="toggler"></span>
                   </span>
                 </button>
                 <p>SWITCH TO DARK MODE</p>
