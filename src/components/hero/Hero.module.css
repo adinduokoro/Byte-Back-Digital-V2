@@ -15,7 +15,7 @@
   z-index: -1;
   background: linear-gradient(
     301deg,
-    var(--primaryColorGreen600) 34.39%,
+    var(--primaryColorGreen) 34.39%,
     var(--primaryColorGreen200) 100%
   );
 }

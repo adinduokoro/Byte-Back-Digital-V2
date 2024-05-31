@@ -9,6 +9,9 @@ const Footer = () => {
         <div className={styles["background-container"]}>
           <BackgroundPieceTwo />
         </div>
+        <div className="container">
+          <div className={styles["footer-content"]}>hello world</div>
+        </div>
       </div>
       <div className={styles.copyright}>
         <p>Copyright © 2024 | Byte Back Digital | All Rights Reserved</p>
