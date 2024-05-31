@@ -14,10 +14,25 @@ const Footer = () => {
         <div className="container">
           <div className={styles["footer-content"]}>
             <div className={styles["footer-content-left"]}>
-              <div className={styles["toggle-container"]}>
-                {/* lamp */}
-                {/* switch */}
+              <div>
+
+              </div>
+              <div className={styles["toggle-content-container"]}>
+              <div className={styles["toggle-content"]}>
+                <div className={styles.light}>
+                  <div className={styles.wire}></div>
+                  <div className={styles.triangle}></div>
+                  <div className={styles.bulb}></div>
+                </div>
+
+                <button className={styles["toggle-container"]}>
+                  <span className={styles["toggler-container"]}>
+                    <span className={styles.DTspan}></span>
+                  </span>
+                </button>
                 <p>SWITCH TO DARK MODE</p>
+              </div>
+
               </div>
               <div className={styles["logo-container"]}>
                 <div className={styles.logo}>
@@ -51,7 +66,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            {/* services */}
           </div>
         </div>
       </div>
