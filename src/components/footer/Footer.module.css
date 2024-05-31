@@ -51,17 +51,15 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  z-index: -1;
-
-
+  
 }
 
 .light {
+  z-index: -1;
   height: auto;
   width: auto;
   position: relative;
   top: 0;
-  z-index: 10;
 }
 
 .wire {
