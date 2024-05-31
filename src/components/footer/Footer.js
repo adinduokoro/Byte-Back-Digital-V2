@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { BackgroundPieceTwo } from "../../assets/background";
+import { navLinks } from "../navigation/data";
+import Logo from "../../assets/logo";
 
 const Footer = () => {
   return (
@@ -10,7 +12,47 @@ const Footer = () => {
           <BackgroundPieceTwo />
         </div>
         <div className="container">
-          <div className={styles["footer-content"]}>hello world</div>
+          <div className={styles["footer-content"]}>
+            <div className={styles["footer-content-left"]}>
+              <div className={styles["toggle-container"]}>
+                {/* lamp */}
+                {/* switch */}
+                <p>SWITCH TO DARK MODE</p>
+              </div>
+              <div className={styles["logo-container"]}>
+                <div className={styles.logo}>
+                  <Logo />
+                </div>
+                <div className={styles["logo-contact-details"]}>
+                  <a href="">bytebackdigital@gmail.com</a>
+                  <a href="">+1 (470) 222-5985</a>
+                </div>
+              </div>
+            </div>
+            <div className={styles["footer-content-right"]}>
+              <div className={styles.navigation}>
+                <h2>Navigation</h2>
+                <div className={styles.ruler}></div>
+                <ul>
+                  {navLinks.map((link, index) => (
+                    <li key={index}>{link.name}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className={styles.navigation}>
+                <h2>Services</h2>
+                <div className={styles.ruler}></div>
+                <ul>
+                  <li>Web Design</li>
+                  <li>Website Maintenance</li>
+                  <li>SEO Services</li>
+                  <li>Content Creation</li>
+                  <li>Logo Design</li>
+                </ul>
+              </div>
+            </div>
+            {/* services */}
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>

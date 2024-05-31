@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
-import Logo from "../../assets/logo"
+import Logo from "../../assets/logo";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container">
         <div className={styles["navigation-content"]}>
           <div className={styles["logo-container"]}>
-          <Logo />
+            <Logo />
           </div>
           <ul className={styles["nav-links"]}>
             {navLinks.map((link, index) => {
