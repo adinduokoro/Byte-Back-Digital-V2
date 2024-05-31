@@ -12,6 +12,8 @@ const Navigation = () => {
           <div className={styles["logo-container"]}>
             <Logo />
           </div>
+          <>
+          
           <ul className={styles["nav-links"]}>
             {navLinks.map((link, index) => {
               return (
@@ -20,7 +22,9 @@ const Navigation = () => {
                 </li>
               );
             })}
+            hi
           </ul>
+          </>
           {/* toggle switch will be placed here */}
         </div>
       </div>

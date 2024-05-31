@@ -1,6 +1,6 @@
 export const perks = [
   {
-    title: "Hosting Plans Available",
+    title: "Hosting Plans Included",
     desc: "Web hosting technology that keeps your website ahead.",
   },
   {

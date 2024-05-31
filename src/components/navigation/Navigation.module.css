@@ -24,7 +24,7 @@
   max-width: 37.1875rem;
   width: 100%;
   justify-content: space-between;
-  color: var(--primaryBackgroundColor) !important;
+  color: var(--primaryBackgroundColor);
   z-index: 5;
 }
 
