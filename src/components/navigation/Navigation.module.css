@@ -19,7 +19,7 @@
   height: 5.385rem;
 }
 
-.nav-buttons{
+.nav-buttons {
   display: flex;
   width: 100%;
   max-width: 37.1875rem;
@@ -29,8 +29,8 @@
 }
 
 .navigation-content ul {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   color: var(--primaryBackgroundColor);
   z-index: 5;
@@ -40,14 +40,17 @@
   font-weight: 700;
 }
 
-.top-toggle-button {
+.top-toggler-container {
+  background: #e6e6e6;
+  border-color: #e6e6e6;
+  box-shadow: 0 15px 5px -8px rgba(67, 183, 255, 0.5);
+  width: 35px;
+}
+
+.top-toggle-container {
   top: 60px;
   right: 15px;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   z-index: 1000;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
