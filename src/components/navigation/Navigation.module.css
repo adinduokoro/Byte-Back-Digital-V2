@@ -40,11 +40,19 @@
   font-weight: 700;
 }
 
+.button-container{
+  position: relative;
+  width: 35px;
+}
+
 .top-toggler-container {
   background: #e6e6e6;
   border-color: #e6e6e6;
   box-shadow: 0 15px 5px -8px rgba(67, 183, 255, 0.5);
-  width: 35px;
+}
+
+.toggler-container{
+  background-color: var(--primaryBackgroundColor);
 }
 
 .top-toggle-container {
@@ -54,3 +62,17 @@
   z-index: 1000;
   transition: 0.3s ease-in;
 }
+
+.button-text{
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primaryBackgroundColor);
+}
+
+.button-text-dark{
+  color: #43b7ff;
+}
+
+

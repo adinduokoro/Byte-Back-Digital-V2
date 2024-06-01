@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
-import { SET_DARK_MODE, selectIsDarkModeOn } from "../../redux/slice/themeSlice";
+import {
+  SET_DARK_MODE,
+  selectIsDarkModeOn,
+} from "../../redux/slice/themeSlice";
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -29,14 +32,25 @@ const Navigation = () => {
                 </li>
               ))}
             </ul>
-            <button
-              className={`${styles["top-toggle-container"]} toggle-container`}
-              onClick={handleToggle}
-            >
-              <span className={`toggler-container ${isDarkModeOn ? "toggler-container-dark" : ""}`}>
-                <span className={`toggler ${isDarkModeOn ? "toggler-dark" : ""}`}></span>
-              </span>
-            </button>
+            <div className={styles["button-container"]}>
+              <button
+                className={`${styles["top-toggle-container"]} toggle-container`}
+                onClick={handleToggle}
+              >
+                <span
+                  className={`${
+                    styles["toggler-container"]
+                  } toggler-container ${
+                    isDarkModeOn ? "toggler-container-dark" : ""
+                  }`}
+                >
+                  <span
+                    className={`toggler ${isDarkModeOn ? "toggler-dark" : ""}`}
+                  ></span>
+                </span>
+              </button>
+              <p className={`${styles["button-text"]} ${isDarkModeOn ? styles["button-text-dark"] : ""}`}>{isDarkModeOn ? "LIGHT" : "DARK"}</p>
+            </div>
           </div>
         </div>
       </div>
