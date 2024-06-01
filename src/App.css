@@ -42,10 +42,6 @@
   --primaryTextColor: #173f30;
 }
 
-[data-theme="dark"]{
-  --primaryBackgroundColor: yellow;
-}
-
 /* Body styles */
 body {
   font-family: var(--font);

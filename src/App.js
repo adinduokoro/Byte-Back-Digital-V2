@@ -4,18 +4,11 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import {Layout} from "./components"
 import { Home } from './pages';
-import { selectIsDarkModeOn } from './redux/slice/themeSlice';
-import { useSelector } from 'react-redux';
-
 
 
 function App() {
-  const isDarkModeOn = useSelector(selectIsDarkModeOn);
-
-  const theme = isDarkModeOn ? 'dark' : "light";
-
   return (
-    <div className="App" data-theme={theme}>
+    <div className="App">
       <ToastContainer />
       <Routes>
         <Route path="/" element={ <Layout />}>

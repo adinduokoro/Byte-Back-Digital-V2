@@ -4,13 +4,9 @@ import { Navigation } from "../../components";
 import { BackgroundPieceOne } from "../../assets/background";
 import heroImage from "../../assets/hero-image.png";
 
-
 const Hero = () => {
-
-
-
   return (
-    <section className={styles.hero} >
+    <section className={styles.hero}>
       <div className={styles["background-container"]}>
         <BackgroundPieceOne />
       </div>
