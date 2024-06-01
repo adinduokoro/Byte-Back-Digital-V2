@@ -1,8 +1,8 @@
 .payment-plan {
   position: relative;
-  height: 48.8125rem;
+  min-height: 48.8125rem;
   width: 100%;
-  margin-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .payment-plan-content {

@@ -6,7 +6,7 @@ import heroImage from "../../assets/hero-image.png";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <header className={styles.hero}>
       <div className={styles["background-container"]}>
         <BackgroundPieceOne />
       </div>
@@ -25,7 +25,7 @@ const Hero = () => {
           <img src={heroImage} alt="hero image" />
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

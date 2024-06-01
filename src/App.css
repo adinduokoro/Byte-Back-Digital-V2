@@ -46,8 +46,11 @@
 body {
   font-family: var(--font);
   scroll-behavior: smooth;
-  background-color: var(--primaryBackgroundColor);
   color: var(--primaryTextColor);
+}
+
+[data-theme="dark"]{
+  --primaryBackgroundColor: pink;
 }
 
 /* Section styles */
@@ -57,6 +60,8 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: var(--primaryBackgroundColor);
+  margin-bottom: -3px;
 }
 
 /* Container styles */

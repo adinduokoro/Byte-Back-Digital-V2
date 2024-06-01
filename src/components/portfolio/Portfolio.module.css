@@ -1,8 +1,8 @@
 .portfolio {
   position: relative;
-  height: 53.75rem;
+  min-height: 53.75rem;
   width: 100%;
-  margin-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
 
 }
 

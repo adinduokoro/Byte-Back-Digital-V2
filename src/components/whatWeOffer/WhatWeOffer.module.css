@@ -1,8 +1,8 @@
 .what-we-offer {
   position: relative;
-  height: 37.390625rem;
+  min-height: 37.390625rem;
   width: 100%;
-  margin-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
 
 }
 
