@@ -3,8 +3,19 @@ import styles from "./Footer.module.css";
 import { BackgroundPieceTwo } from "../../assets/background";
 import { navLinks } from "../navigation/data";
 import Logo from "../../assets/logo";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  SET_DARK_MODE,
+  selectIsDarkModeOn,
+} from "../../redux/slice/themeSlice";
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
+  const handleToggle = () => {
+    dispatch(SET_DARK_MODE(!isDarkModeOn));
+  };
 
   return (
     <footer className={styles.footer}>
@@ -15,25 +26,30 @@ const Footer = () => {
         <div className="container">
           <div className={styles["footer-content"]}>
             <div className={styles["footer-content-left"]}>
-              <div>
-
-              </div>
+              <div></div>
               <div className={styles["toggle-content-container"]}>
-              <div className={styles["toggle-content"]}>
-                <div className={styles.light}>
-                  <div className={styles.wire}></div>
-                  <div className={styles.triangle}></div>
-                  <div className={styles.bulb}></div>
+                <div className={styles["toggle-content"]}>
+                  <div className={styles.light}>
+                    <div className={`${styles.wire} ${isDarkModeOn ? styles["wire-dark"] : ""}`}></div>
+                    <div className={`${styles.triangle} ${isDarkModeOn ? styles["triangle-dark"] : ""}`}></div>
+                    <div className={`${styles.bulb} ${isDarkModeOn ? styles["bulb-animated"] : ""}`}></div>
+                  </div>
+
+                  <button className={`toggle-container`} onClick={handleToggle}>
+                    <span
+                      className={`toggler-container ${
+                        isDarkModeOn ? "toggler-container-dark" : ""
+                      }`}
+                    >
+                      <span
+                        className={`toggler ${
+                          isDarkModeOn ? "toggler-dark" : ""
+                        }`}
+                      ></span>
+                    </span>
+                  </button>
+                  <p>SWITCH TO {isDarkModeOn ? "LIGHT" : "DARK"} MODE</p>
                 </div>
-
-                <button className="toggle-container">
-                  <span className="toggler-container">
-                    <span className="toggler"></span>
-                  </span>
-                </button>
-                <p>SWITCH TO DARK MODE</p>
-              </div>
-
               </div>
               <div className={styles["logo-container"]}>
                 <div className={styles.logo}>
