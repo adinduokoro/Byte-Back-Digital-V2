@@ -17,6 +17,7 @@ const Navigation = () => {
     dispatch(SET_DARK_MODE(!isDarkModeOn));
   };
 
+
   return (
     <nav className={styles.navigation}>
       <div className="container">
