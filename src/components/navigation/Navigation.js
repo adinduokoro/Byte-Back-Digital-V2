@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  SET_DARK_MODE,
+  selectIsDarkModeOn,
+} from "../../redux/slice/themeSlice";
 
 const Navigation = () => {
+  const dispatch = useDispatch();
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
+  const handleToggle = () => {
+    dispatch(SET_DARK_MODE(!isDarkModeOn));
+  };
+
   return (
     <nav className={styles.navigation}>
       <div className="container">
@@ -24,9 +36,12 @@ const Navigation = () => {
             </ul>
             <button
               className={` ${styles["top-toggle-button"]} toggle-container`}
+              onClick={handleToggle}
             >
               <span className="toggler-container">
-                <span className="toggler"></span>
+                <span
+                  className={`toggler ${isDarkModeOn ? "toggler-dark" : ""}`}
+                ></span>
               </span>
             </button>
           </div>

@@ -184,7 +184,7 @@ button {
   transform: rotate(90deg);
 }
 
-.toggler-container span {
+.toggler {
   cursor: pointer;
   box-sizing: border-box;
   font-family: Poppins,sans-serif;
@@ -199,3 +199,16 @@ button {
   transition: .3s ease;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.75);
 }
+
+.toggler-dark {
+  left: 15px;
+  transition: .3s ease;
+
+}
+
+
+
+
+
+
+

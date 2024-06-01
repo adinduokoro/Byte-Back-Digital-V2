@@ -5,6 +5,7 @@ import { navLinks } from "../navigation/data";
 import Logo from "../../assets/logo";
 
 const Footer = () => {
+
   return (
     <footer className={styles.footer}>
       <div className={styles["footer-container"]}>
