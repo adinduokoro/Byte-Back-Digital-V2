@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Reset default styles */
 * {
@@ -31,70 +31,57 @@
   --primaryColorNeutral700: #dae7e2;
   --primaryColorNeutral800: #e3eee9;
   --primaryColorNeutral900: #ecf4f0;
-  --primaryColorBlack: #000000;
-  --primaryColorBlack100: #122b20;
+  --primaryColorBlack: #222;
   --primaryColorWhite: #ffffff;
 
-  
+  /* Text color */
 
+  /* --------------------------------------------------------- */
 
+  /* Main */
+  --primaryColor: var(--primaryColorGreen);
+  --secondaryColor: var(--primaryColorGreen900);
+  --tertiaryColor: var(--primaryColorGreen100);
 
-    /* Text color */
-  
-    /* --------------------------------------------------------- */
+  /* Text Color */
+  --headerText: var(--primaryColorGreen100);
+  --bodyText: var(--primaryColorGreen300);
 
-    
+  /* Background color */
+  --primaryBackgroundColor: var(--primaryColorGreen900);
+  --backgroundAssetOne: linear-gradient(
+    301deg,
+    var(--primaryColor) 34.39%,
+    var(--primaryColorGreen100) 100%
+  );
+  --backgroundAssetTwo: linear-gradient(
+    90deg,
+    var(--primaryColorGreen200) 0%,
+    var(--primaryColorGreen) 100%
+  );
 
-    
-   
-  
-
-
-
-/* Main */
-    --primaryColor: var(--primaryColorGreen);
-    --secondaryColor: var(--primaryColorGreen900);
-    --tertiaryColor: var(--primaryColorGreen100);
-
-    /* Text Color */
-    --headerText: var(--primaryColorGreen100);
-    --bodyText: var(--primaryColorGreen300);
-    
-    /* Background color */
-    --primaryBackgroundColor: var(--primaryColorGreen900);
-
-  
-  }
-  
-  
-  [data-theme="dark"]{
-    
-    /* Main */
-    --tertiaryColor: var(--primaryColorGreen900);
-
-      /* Text Color */
-    --headerText: var(--primaryColorGreen900);
-    --bodyText: var(--primaryColorNeutral300);
-
-
-    /* Background color */
-    --primaryBackgroundColor: var(--primaryColorGreen100);
-
-  
-
-
-
-
-
-
-
-    /* --------------------------------------------------------- */
-
-
-
-  --secondaryTextColor: var(--primaryColorNeutral900);
+  /* Misc Colors */
+  --bannerColor: #A7FFA4;
 }
 
+[data-theme="dark"] {
+  /* Main */
+  --tertiaryColor: var(--primaryColorGreen900);
+
+  /* Text Color */
+  --headerText: var(--primaryColorGreen900);
+  --bodyText: var(--primaryColorNeutral300);
+
+  /* Background color */
+  --primaryBackgroundColor: var(--primaryColorGreen100);
+  --backgroundAssetOne: linear-gradient(170deg ,var(--primaryColorBlack) 35%, #000 70%);
+  --backgroundAssetTwo: #000;
+
+  /* Misc Colors */
+  --bannerColor: #000;
+
+  /* --------------------------------------------------------- */
+}
 
 /* Body styles */
 body {
@@ -223,7 +210,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s ease;
+  transition: 0.3s ease;
   transform: rotate(90deg);
 }
 
@@ -239,11 +226,11 @@ button {
   border-radius: 50%;
   background: #fff;
   position: absolute;
-  transition: .3s ease;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
+  transition: 0.3s ease;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .toggler-dark {
   left: 15px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }

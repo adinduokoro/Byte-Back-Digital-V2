@@ -21,11 +21,8 @@
   width: 100%;
   z-index: -1;
   overflow: hidden;
-  background: linear-gradient(
-    301deg,
-    var(--primaryColor) 34.39%,
-    var(--primaryColorGreen100) 100%
-  );
+  background: var(--backgroundAssetOne);
+  
 }
 
 .footer-content {
@@ -71,11 +68,11 @@
   transform: translateY(50x);
   background: var(--secondaryColor);
   margin: auto;
-  z-index: 0;
+  z-index: 9;
 }
 
 .wire-dark{
-  background: var(--secondaryColor);
+  background: #000;
 }
 
 .triangle {
@@ -88,7 +85,7 @@
   
 }
 .triangle-dark{
-  border-bottom: 26px solid var(--secondaryColor);
+  border-bottom: 26px solid #000;
   
 }
 
@@ -212,11 +209,7 @@
 }
 
 .copyright {
-  background: linear-gradient(
-    90deg,
-    var(--primaryColorGreen200) 0%,
-    var(--primaryColorGreen) 100%
-  );
+  background: var(--backgroundAssetTwo);
   display: flex;
   align-items: center;
   justify-content: center;
