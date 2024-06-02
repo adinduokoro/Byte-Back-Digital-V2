@@ -21,16 +21,17 @@
 }
 
 .content-right h2 {
-  color: var(--primaryColorGreen100);
+  color: var(--tertiaryColor);
   font-weight: 600 !important;
   margin-bottom: 0.75rem;
 }
 
 .content-right span {
-  color: var(--primaryColorGreen);
+  color: var(--primaryColor);
 }
 
 .content-right .desc {
+  color: var(--bodyText);
   margin-bottom: 3.25rem;
 }
 
@@ -50,5 +51,9 @@
 .perk h3 {
   white-space: nowrap;
   margin: 0.12rem 0 0.5rem;
-  color: var(--primaryColorGreen100);
+  color: var(--headerText);
+}
+
+.perk p{
+  color: var(--bodyText);
 }

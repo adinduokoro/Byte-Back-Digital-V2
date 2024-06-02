@@ -35,22 +35,77 @@
   --primaryColorBlack100: #122b20;
   --primaryColorWhite: #ffffff;
 
-  /* Background color */
-  --primaryBackgroundColor: #f0fff9;
+  
 
-  /* Text color */
-  --primaryTextColor: #173f30;
+
+
+    /* Text color */
+  
+    /* --------------------------------------------------------- */
+
+    
+
+    
+   
+  
+
+
+
+/* Main */
+    --primaryColor: var(--primaryColorGreen);
+    --secondaryColor: var(--primaryColorGreen900);
+    --tertiaryColor: var(--primaryColorGreen100);
+
+    /* Text Color */
+    --headerText: var(--primaryColorGreen100);
+    --bodyText: var(--primaryColorGreen300);
+    --textColor: ;
+    
+    /* Background color */
+    --primaryBackgroundColor: var(--primaryColorGreen900);
+
+    /* Assets */
+    --light: ;
+
+  }
+  
+  
+  [data-theme="dark"]{
+    
+    /* Main */
+    --tertiaryColor: var(--primaryColorGreen900);
+
+      /* Text Color */
+    --headerText: var(--primaryColorGreen900);
+    --bodyText: var(--primaryColorNeutral300);
+
+    --textColor: ;
+
+    /* Background color */
+    --primaryBackgroundColor: var(--primaryColorGreen100);
+
+    /* Assets */
+    --dark: ;
+
+
+
+
+
+
+
+    /* --------------------------------------------------------- */
+
+
+
+  --secondaryTextColor: var(--primaryColorNeutral900);
 }
+
 
 /* Body styles */
 body {
   font-family: var(--font);
   scroll-behavior: smooth;
-  color: var(--primaryTextColor);
-}
-
-[data-theme="dark"]{
-  --primaryBackgroundColor: pink;
+  color: var(--bodyText);
 }
 
 /* Section styles */

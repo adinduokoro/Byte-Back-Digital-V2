@@ -23,7 +23,7 @@ header{
   z-index: -1;
   background: linear-gradient(
     301deg,
-    var(--primaryColorGreen) 34.39%,
+    var(--primaryColor) 34.39%,
     var(--primaryColorGreen200) 100%
   );
 }
@@ -38,9 +38,12 @@ header{
 }
 
 .hero-content h1,
-.hero-content p {
-  color: var(--primaryBackgroundColor);
+.hero-content p{
+  color: var(--secondaryColor);
 }
+
+
+
 
 .hero-image {
   position: absolute;

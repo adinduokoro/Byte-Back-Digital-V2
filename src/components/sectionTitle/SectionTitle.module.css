@@ -15,7 +15,7 @@
   
   .ruler {
     width: 5rem;
-    border: 0.5px dashed var(--primaryColorGreen);
+    border: 0.5px dashed var(--primaryColor);
   }
   
   .image-container {
@@ -29,12 +29,12 @@
   }
   
   .section-title h2 {
-    color: var(--primaryColorGreen);
+    color: var(--primaryColor);
     margin-bottom: 0.25rem;
     white-space: nowrap;
   }
   
   .section-title span {
-    color: var(--primaryColorGreen100);
+    color: var(--tertiaryColor);
   }
   

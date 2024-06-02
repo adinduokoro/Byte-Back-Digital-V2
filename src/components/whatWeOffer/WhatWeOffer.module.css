@@ -15,7 +15,7 @@
 }
 
 .what-we-offer-content p {
-  color: var(--primaryColorGreen200);
+  color: var(--bodyText);
 }
 
 .description {
@@ -40,5 +40,5 @@
 .card h3 {
   white-space: nowrap;
   margin-bottom: 1rem;
-  color: var(--primaryColorGreen100);
+  color: var(--headerText);
 }
