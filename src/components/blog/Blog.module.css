@@ -35,9 +35,11 @@
 .blog-card h3 {
   color: var(--primaryColorGreen100);
   margin-bottom: 1rem;
+  color: var(--headerText);
 }
 
 .blog-card p {
   margin-bottom: 3.81rem;
   font-weight: 400;
+  color: var(--bodyText);
 }

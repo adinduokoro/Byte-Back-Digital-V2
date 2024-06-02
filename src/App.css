@@ -59,14 +59,11 @@
     /* Text Color */
     --headerText: var(--primaryColorGreen100);
     --bodyText: var(--primaryColorGreen300);
-    --textColor: ;
     
     /* Background color */
     --primaryBackgroundColor: var(--primaryColorGreen900);
 
-    /* Assets */
-    --light: ;
-
+  
   }
   
   
@@ -79,13 +76,11 @@
     --headerText: var(--primaryColorGreen900);
     --bodyText: var(--primaryColorNeutral300);
 
-    --textColor: ;
 
     /* Background color */
     --primaryBackgroundColor: var(--primaryColorGreen100);
 
-    /* Assets */
-    --dark: ;
+  
 
 
 

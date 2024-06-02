@@ -215,7 +215,7 @@
   background: linear-gradient(
     90deg,
     var(--primaryColorGreen200) 0%,
-    var(--primaryColor) 100%
+    var(--primaryColorGreen) 100%
   );
   display: flex;
   align-items: center;
