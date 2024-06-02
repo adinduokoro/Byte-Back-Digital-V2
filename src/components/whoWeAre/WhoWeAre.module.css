@@ -17,6 +17,7 @@
   margin: 2.05rem 0 6.01rem;
   text-align: center;
   max-width: 37.5rem;
+  color: var(--bodyText);
 }
 
 .profile-container {
@@ -48,7 +49,7 @@
 }
 
 .who-we-are-content h3 {
-  color: var(--primaryColorGreen100);
+  color: var(--headerText);
   text-align: center;
   margin-bottom: 0.75rem;
 }

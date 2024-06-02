@@ -34,16 +34,17 @@
 }
 
 .portfolio-card h3 {
-  color: var(--primaryColorGreen100);
+  color: var(--headerText);
   margin-top: 2.5rem;
 }
 
 .portfolio-card h4 {
   margin-top: 0.25rem;
-  color: var(--primaryColorNeutral600);
+  color: var(--headerText);
 }
 
 .portfolio-card p {
   width: 15.8125rem;
   margin: 1.75rem 0 3.62rem;
+  color: var(--bodyText);
 }
