@@ -18,15 +18,13 @@ header {
   );
 }
 
-.hero-dark{
+.hero-dark {
   background: linear-gradient(
     301deg,
     var(--primaryColorGreen100) 34.39%,
     var(--primaryColorGreen200) 100%
-    );
+  );
 }
-
-
 
 .background-container {
   position: absolute;
@@ -39,18 +37,143 @@ header {
 }
 
 .space-content {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: absolute;
-  bottom: 20%;
-  left: 62.5%;
-}
-/* start right here  */
-
-.test{
-  position: absolute;
+  height: 100%;
+  /* border: 9px solid orange; */
+  color: antiquewhite;
 }
 
-.background-container-dark {
+.universe-one {
+  height: 50%;
+  width: 100%;
+  left: 0;
+  border: 1px solid violet;
+}
+
+.shooting-star{
+  position: absolute;
+        right: 50%;
+        top: -13.59%;
+        width: 1px;
+        height: 70px;
+        background: #fff;
+        -webkit-transform: rotate(-52deg);
+        -ms-transform: rotate(-52deg);
+        transform: rotate(-52deg);
+        -webkit-animation: shootingStar;
+        animation: shootingStar;
+        -webkit-animation-duration: 9s;
+        animation-duration: 9s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s
+}
+
+@keyframes shootingStar {
+  0% {
+      top: -13.59%;
+      right: 60%
+  }
+
+  2% {
+      opacity: 0;
+      top: 100%;
+      right: 0
+  }
+
+  86% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 0
+  }
+}
+
+.star2{
+  top: -23.59%;
+        -webkit-animation: shootingStar2;
+        animation: shootingStar2;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s
+}
+
+@keyframes shootingStar2 {
+  0% {
+      top: -23.59%;
+      right: 50%
+  }
+
+  2% {
+      opacity: 0;
+      top: 100%;
+      right: -17%
+  }
+
+  86% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 0
+  }
+}
+
+.satellite{
+  width: 10px!important;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    -webkit-animation-name: orbit;
+    animation-name: orbit;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@keyframes orbit {
+  0% {
+      top: 10%;
+      left: 0;
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+  }
+
+  100% {
+      top: -40%;
+      left: 120%;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+  }
+}
+
+
+.background-piece-one-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-container-dark { 
   background: rgba(0, 40, 60, 0.3);
 }
 
