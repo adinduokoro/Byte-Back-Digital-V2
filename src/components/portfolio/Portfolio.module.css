@@ -27,6 +27,15 @@
   padding: 0 1.62rem;
 }
 
+.portfolio-card-dark{
+  background-color: #1b1b1b;
+  border-bottom: 4px solid var(--primaryColor);
+  box-shadow: 0 0 15px -5px var(--primaryColor);
+  border-right: 1px solid var(--primaryColor);
+  border-top: 1px solid var(--primaryColor);
+  border-left: 1px solid var(--primaryColor);
+}
+
 .portfolio-card img {
   width: 16.05506rem;
   height: 8.75rem;

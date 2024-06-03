@@ -26,8 +26,13 @@
   padding: 0 1.62rem;
 }
 
-.blog-card-dark{
+.blog-card-dark {
   background-color: #1b1b1b;
+  border-bottom: 1px solid var(--primaryColor);
+  box-shadow: 0 0 15px -5px var(--primaryColor);
+  border-right: 1px solid var(--primaryColor);
+  border-top: 4px solid var(--primaryColor);
+  border-left: 1px solid var(--primaryColor);
 }
 
 .blog-card img {

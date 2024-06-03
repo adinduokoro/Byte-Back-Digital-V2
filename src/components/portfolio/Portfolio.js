@@ -3,8 +3,12 @@ import styles from "./Portfolio.module.css";
 import { SectionTitle } from "../../components";
 import desktopIcon from "../../assets/desktop-icon.svg";
 import { portfolios } from "./data";
+import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
+import { useSelector } from "react-redux";
 
 const Portfolio = () => {
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
   return (
     <section className={styles.portfolio}>
       <div className="container">
@@ -16,12 +20,18 @@ const Portfolio = () => {
           />
           <div className={styles.portfolios}>
             {portfolios.map((portfolio, index) => (
-              <div className={styles["portfolio-card"]} key={index}>
+              <div className={`${styles["portfolio-card"]} ${
+                isDarkModeOn ? styles["portfolio-card-dark"] : ""
+              } `} key={index}>
                 <img src={portfolio.image} alt="" />
                 <h3>{portfolio.title}</h3>
                 <h4>{portfolio.subtitle}</h4>
                 <p>{portfolio.description}</p>
-                <button className="btn-two">VISIT PAGE</button>
+                <button
+                  className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}`}
+                >
+                  VISIT PAGE
+                </button>
               </div>
             ))}
           </div>
