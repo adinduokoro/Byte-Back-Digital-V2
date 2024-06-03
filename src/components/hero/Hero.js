@@ -3,11 +3,15 @@ import styles from "./Hero.module.css";
 import { Navigation } from "../../components";
 import { BackgroundPieceOne } from "../../assets/background";
 import heroImage from "../../assets/hero-image.png";
+import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
+import { useSelector } from "react-redux";
 
 const Hero = () => {
+  const isDarkModeOn = useSelector(selectIsDarkModeOn)
+  
   return (
     <header className={styles.hero}>
-      <div className={styles["background-container"]}>
+      <div className={`${styles["background-container"]} ${isDarkModeOn ? styles["background-container-dark"] : ""}`}>
 
 
       

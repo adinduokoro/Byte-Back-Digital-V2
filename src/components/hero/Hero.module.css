@@ -1,4 +1,4 @@
-header{
+header {
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,7 +11,6 @@ header{
   height: 56.25rem;
   width: 100%;
   padding-bottom: 4.5rem;
-
 }
 
 .background-container {
@@ -20,17 +19,16 @@ header{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
   background: linear-gradient(
     301deg,
     var(--primaryColor) 34.39%,
     var(--primaryColorGreen200) 100%
   );
-  border: 8px solid pink;;
+  border: 8px solid pink;
 }
 
-.background-container-dark{
-  
+.background-container-dark {
+
 }
 
 .hero-content {
@@ -43,12 +41,9 @@ header{
 }
 
 .hero-content h1,
-.hero-content p{
+.hero-content p {
   color: var(--secondaryColor);
 }
-
-
-
 
 .hero-image {
   position: absolute;
