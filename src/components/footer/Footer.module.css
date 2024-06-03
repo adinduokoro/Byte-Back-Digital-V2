@@ -119,9 +119,9 @@
   animation-fill-mode: forwards;
   animation-timing-function: step-start;
   transform: translateY(-22px);
-  background: #43b7ff;
-  background: -o-radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
-  background: radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
+  background: var(--primaryColor);
+  background: -o-radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
+  background: radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
 }
 
 .bulb-animated:before{
@@ -130,19 +130,19 @@
 
 @keyframes bulbFlicker {
   0%, 2%, 9%, 26%, 48% {
-    background: #43b7ff;
-    background: -o-radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
-    background: radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
+    background: var(--primaryColor);
+    background: -o-radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
+    background: radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
   }
   
   1%, 8%, 25%, 47% {
-    background: rgba(67, 183, 255, 0);
+    background: rgba(67, 255, 167, 0);
   }
   
   100% {
-    background: #43b7ff;
-    background: -o-radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
-    background: radial-gradient(circle, #43b7ff 0, rgba(0,0,0,0) 45%);
+    background: var(--primaryColor);
+    background: -o-radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
+    background: radial-gradient(circle, var(--primaryColor) 0, rgba(0,0,0,0) 45%);
   }
 }
 

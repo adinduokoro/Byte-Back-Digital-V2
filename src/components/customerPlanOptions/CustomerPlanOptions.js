@@ -43,7 +43,7 @@ const CustomerPlanOptions = () => {
                     </div>
                   ))}
                 </ul>
-                <button className="btn-two">Contact Us</button>
+                <button className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}` }>Contact Us</button>
               </div>
             ))}
           </div>
