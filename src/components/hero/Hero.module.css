@@ -23,8 +23,10 @@ header {
     301deg,
     var(--primaryColorGreen100) 34.39%,
     var(--primaryColorGreen200) 100%
-  );
+    );
 }
+
+
 
 .background-container {
   position: absolute;
@@ -32,6 +34,20 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: transparent;
+  z-index: 1; /* Ensure container is the base layer */
+}
+
+.space-content {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 62.5%;
+}
+/* start right here  */
+
+.test{
+  position: absolute;
 }
 
 .background-container-dark {

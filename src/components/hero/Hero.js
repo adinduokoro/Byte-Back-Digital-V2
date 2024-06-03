@@ -7,20 +7,23 @@ import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { useSelector } from "react-redux";
 
 const Hero = () => {
-  const isDarkModeOn = useSelector(selectIsDarkModeOn)
-  
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
   return (
-    <header className={`${styles.hero} ${isDarkModeOn ? styles["hero-dark"] : ""}`}>
-      <div className={`${styles["background-container"]} ${isDarkModeOn ? styles["background-container-dark"] : ""}`}>
-
-
-      
-
-
-
-        <BackgroundPieceOne />
+    <header
+      className={`${styles.hero} ${isDarkModeOn ? styles["hero-dark"] : ""}`}
+    >
+      <div
+        className={`${styles["background-container"]} ${
+          isDarkModeOn ? styles["background-container-dark"] : ""
+        }`}
+      >
+        <div className={styles["space-content"]}>i</div>
+        <div className={styles.test}>
+          <BackgroundPieceOne />
+        </div>
       </div>
-      <div className="container">
+      {/* <div className="container">
         <Navigation />
         <div className={styles["hero-content"]}>
           <h1>Small Business Web Design + Development</h1>
@@ -29,12 +32,14 @@ const Hero = () => {
             custom-coded websites with exceptional results, starting at
             $150/month.
           </p>
-          <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>SEND A MESSAGE</button>
+          <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>
+            SEND A MESSAGE
+          </button>
         </div>
         <div className={styles["hero-image"]}>
           <img src={heroImage} alt="hero image" />
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };
