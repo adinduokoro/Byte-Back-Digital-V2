@@ -1,4 +1,5 @@
 export { default as Layout } from "./layout/Layout";
+export { default as SpaceContent } from "./spaceContent/SpaceContent";
 export { default as Hero } from "./hero/Hero";
 export { default as Navigation } from "./navigation/Navigation";
 export { default as SectionTitle } from "./sectionTitle/SectionTitle";
