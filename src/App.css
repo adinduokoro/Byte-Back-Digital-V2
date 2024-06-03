@@ -178,6 +178,23 @@ button {
   color: var(--primaryTextColor);
   width: 12.73rem;
   height: 3.5rem;
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 0.75em;
+  transition: 0.3s ease;
+}
+
+.btn-one-dark{
+  background: 0 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #000;
+  color: var(--primaryColor);
+  font-size: 12px;
+  text-shadow: 0 -1px 0 #000;
+  animation: glow .8s ease-out infinite alternate
 }
 
 .btn-two {
@@ -230,7 +247,7 @@ button {
 
   17% {
     border-color: var(--primaryColor);
-    box-shadow: 0 0 5px rgba(67, 255, 214, 0.2), 
+    box-shadow: 0 0 5px rgba(67, 255, 214, 0.2),
       inset 0 0 5px rgba(89, 255, 67, 0.1), 0 2px 0 #000;
   }
 

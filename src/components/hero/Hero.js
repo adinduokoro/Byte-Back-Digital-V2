@@ -29,7 +29,7 @@ const Hero = () => {
             custom-coded websites with exceptional results, starting at
             $150/month.
           </p>
-          <button className="btn-one">SEND A MESSAGE</button>
+          <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>SEND A MESSAGE</button>
         </div>
         <div className={styles["hero-image"]}>
           <img src={heroImage} alt="hero image" />
