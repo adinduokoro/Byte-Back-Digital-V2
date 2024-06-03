@@ -26,6 +26,11 @@ header{
     var(--primaryColor) 34.39%,
     var(--primaryColorGreen200) 100%
   );
+  border: 8px solid pink;;
+}
+
+.background-container-dark{
+  
 }
 
 .hero-content {

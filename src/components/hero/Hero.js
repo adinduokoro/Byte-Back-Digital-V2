@@ -8,6 +8,12 @@ const Hero = () => {
   return (
     <header className={styles.hero}>
       <div className={styles["background-container"]}>
+
+
+      
+
+
+
         <BackgroundPieceOne />
       </div>
       <div className="container">
