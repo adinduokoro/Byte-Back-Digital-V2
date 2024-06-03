@@ -30,9 +30,21 @@ const Footer = () => {
               <div className={styles["toggle-content-container"]}>
                 <div className={styles["toggle-content"]}>
                   <div className={styles.light}>
-                    <div className={`${styles.wire} ${isDarkModeOn ? styles["wire-dark"] : ""}`}></div>
-                    <div className={`${styles.triangle} ${isDarkModeOn ? styles["triangle-dark"] : ""}`}></div>
-                    <div className={`${styles.bulb} ${isDarkModeOn ? styles["bulb-animated"] : ""}`}></div>
+                    <div
+                      className={`${styles.wire} ${
+                        isDarkModeOn ? styles["wire-dark"] : ""
+                      }`}
+                    ></div>
+                    <div
+                      className={`${styles.triangle} ${
+                        isDarkModeOn ? styles["triangle-dark"] : ""
+                      }`}
+                    ></div>
+                    <div
+                      className={`${styles.bulb} ${
+                        isDarkModeOn ? styles["bulb-animated"] : ""
+                      }`}
+                    ></div>
                   </div>
 
                   <button className={`toggle-container`} onClick={handleToggle}>
@@ -54,6 +66,19 @@ const Footer = () => {
               <div className={styles["logo-container"]}>
                 <div className={styles.logo}>
                   <Logo />
+                  {isDarkModeOn ? (
+                    <div className={styles["after-dark"]}>
+                      <span>A</span>
+                      <span>f</span>
+                      <span>t</span>
+                      <span>e</span>
+                      <span>r</span>
+                      <span>D</span>
+                      <span>a</span>
+                      <span>r</span>
+                      <span>k</span>
+                    </div>
+                  ) : null}
                 </div>
                 <div className={styles["logo-contact-details"]}>
                   <a href="">bytebackdigital@gmail.com</a>

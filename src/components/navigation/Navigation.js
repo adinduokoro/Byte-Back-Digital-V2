@@ -23,6 +23,19 @@ const Navigation = () => {
         <div className={styles["navigation-content"]}>
           <div className={styles["logo-container"]}>
             <Logo />
+            {isDarkModeOn ? (
+              <div className={styles["after-dark"]}>
+                <span>A</span>
+                <span>f</span>
+                <span>t</span>
+                <span>e</span>
+                <span>r</span>
+                <span>D</span>
+                <span>a</span>
+                <span>r</span>
+                <span>k</span>
+              </div>
+            ) : null}
           </div>
           <div className={styles["nav-buttons"]}>
             <ul className={styles["nav-links"]}>
@@ -49,7 +62,13 @@ const Navigation = () => {
                   ></span>
                 </span>
               </button>
-              <p className={`${styles["button-text"]} ${isDarkModeOn ? styles["button-text-dark"] : ""}`}>{isDarkModeOn ? "LIGHT" : "DARK"}</p>
+              <p
+                className={`${styles["button-text"]} ${
+                  isDarkModeOn ? styles["button-text-dark"] : ""
+                }`}
+              >
+                {isDarkModeOn ? "LIGHT" : "DARK"}
+              </p>
             </div>
           </div>
         </div>
