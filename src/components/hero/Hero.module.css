@@ -11,6 +11,19 @@ header {
   height: 56.25rem;
   width: 100%;
   padding-bottom: 4.5rem;
+  background: linear-gradient(
+    301deg,
+    var(--primaryColor) 34.39%,
+    var(--primaryColorGreen200) 100%
+  );
+}
+
+.hero-dark{
+  background: linear-gradient(
+    301deg,
+    var(--primaryColorGreen100) 34.39%,
+    var(--primaryColorGreen200) 100%
+  );
 }
 
 .background-container {
@@ -19,16 +32,10 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    301deg,
-    var(--primaryColor) 34.39%,
-    var(--primaryColorGreen200) 100%
-  );
-  border: 8px solid pink;
 }
 
 .background-container-dark {
-
+  background: rgba(0, 40, 60, 0.3);
 }
 
 .hero-content {

@@ -10,7 +10,7 @@ const Hero = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn)
   
   return (
-    <header className={styles.hero}>
+    <header className={`${styles.hero} ${isDarkModeOn ? styles["hero-dark"] : ""}`}>
       <div className={`${styles["background-container"]} ${isDarkModeOn ? styles["background-container-dark"] : ""}`}>
 
 

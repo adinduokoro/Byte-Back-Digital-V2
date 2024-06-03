@@ -72,7 +72,7 @@
 }
 
 .button-text-dark{
-  color: #43b7ff;
+  color: var(--primaryColor);
 }
 
 
