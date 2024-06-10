@@ -57,3 +57,16 @@
 .perk p{
   color: var(--bodyText);
 }
+
+@media screen and (max-width: 1024px) {
+  .payment-plan-content{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .content-left img {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    height: 16.40625rem;
+  }
+}

@@ -12,6 +12,7 @@ const PaymentPlan = () => {
           <div className={styles["content-left"]}>
             <img src={paymentPlanImage} alt="" />
           </div>
+
           <div className={styles["content-right"]}>
             <h2>
               <span>$0</span> Down, <span>$199</span> Per Month, <br />6 Month Minimum Contract
