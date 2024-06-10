@@ -14,7 +14,7 @@ const PaymentPlan = () => {
           </div>
           <div className={styles["content-right"]}>
             <h2>
-              <span>$0</span> Down, <span>$150</span> Per Month, <br />6 Month Minimum Contract
+              <span>$0</span> Down, <span>$199</span> Per Month, <br />6 Month Minimum Contract
             </h2>
             <p className={styles.desc}>
               $0 down for a standard 5 page small business website. If you need

@@ -31,7 +31,7 @@ const Hero = () => {
           <p>
             No page builders or WordPress—located in Maryland, we deliver 100%
             custom-coded websites with exceptional results, starting at
-            $150/month.
+            $199/month.
           </p>
           <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>
             SEND A MESSAGE

@@ -2,11 +2,11 @@ export const paymentOptions = [
   {
     title: "E-COMMERCE",
     subTitle: "STARTING AT",
-    price: "3k",
+    price: "5k",
     perMonth: false,
 
     perks: [
-      "3000 min. up Front Cost",
+      "5000 min. up Front Cost",
       "Custom Designed",
       "Shopify or Stripe Integration",
       "Admin Capabilities",
