@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
+import HamburgerMenu from "../../assets/hamburgerMenu"
 import {
   SET_DARK_MODE,
   selectIsDarkModeOn,
@@ -46,6 +47,9 @@ const Navigation = () => {
               ))}
             </ul>
             <div className={styles["button-container"]}>
+              <div className={styles["hamburger-menu"]}>
+                <HamburgerMenu />
+              </div>
               <button
                 className={`${styles["top-toggle-container"]} toggle-container`}
                 onClick={handleToggle}

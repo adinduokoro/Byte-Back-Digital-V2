@@ -25,17 +25,16 @@
   transition: 0.1s ease-in;
   font-family: Yellowtail, sans-serif;
   color: var(--primaryColor);
-  top: 63px;
+  top: 70px;
   left: 90px;
   z-index: 1000;
   transform: rotate(-13deg);
 }
 
 .after-dark span {
-  font-family: Yellowtail;
+  font-family: Yellowtail, sans-serif;
   display: table-cell;
   margin: 0;
-  font-size: 1.5em;
   font-size: 2.25rem;
   padding: 0;
   animation: neonGlow 3s linear infinite
@@ -118,6 +117,10 @@
   width: 35px;
 }
 
+.hamburger-menu{
+  display: none;
+}
+
 .top-toggler-container {
   background: #e6e6e6;
   border-color: #e6e6e6;
@@ -146,4 +149,44 @@
 
 .button-text-dark {
   color: var(--primaryColor);
+}
+
+@media screen and (max-width: 950px) {
+  .navigation {
+    height: 4.375rem;
+  }
+
+  .logo-container {
+    margin-top: 1rem;
+    height: 3.125rem;
+  }
+
+  .nav-buttons {
+    justify-content: end;
+    gap: 3rem;
+  }
+
+  .nav-buttons ul {
+    display: none;
+  }
+
+  .after-dark {
+    top: 2.8875rem;
+  }
+  
+  .after-dark span {
+    font-size: 1.1875rem;
+  }
+
+  .hamburger-menu{
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .button-text {
+    bottom: -35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 }
