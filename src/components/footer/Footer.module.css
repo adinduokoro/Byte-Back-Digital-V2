@@ -22,7 +22,6 @@
   z-index: -1;
   overflow: hidden;
   background: var(--backgroundAssetOne);
-  
 }
 
 .footer-content {
@@ -295,3 +294,4 @@
   color: var(--secondaryColor);
   line-height: 1.25rem;
 }
+

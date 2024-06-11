@@ -10,6 +10,7 @@ const CustomerPlanOptions = () => {
 
   return (
     <section className={styles["customer-plan-options"]}>
+      <div className={styles["background-blend"]}></div>
       <div className="container">
         <div className={styles["customer-plan-options-content"]}>
           <div className={styles["plan-options"]}>
