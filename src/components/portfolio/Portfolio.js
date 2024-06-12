@@ -20,10 +20,16 @@ const Portfolio = () => {
           />
           <div className={styles.portfolios}>
             {portfolios.map((portfolio, index) => (
-              <div className={`${styles["portfolio-card"]} ${
-                isDarkModeOn ? styles["portfolio-card-dark"] : ""
-              } `} key={index}>
-                <img src={portfolio.image} alt="" />
+              <div
+                className={`${styles["portfolio-card"]} ${
+                  isDarkModeOn ? styles["portfolio-card-dark"] : ""
+                } `}
+                key={index}
+              >
+                <div className={styles["image-container"]}>
+                  <img src={portfolio.image} alt="" />
+                </div>
+
                 <h3>{portfolio.title}</h3>
                 <h4>{portfolio.subtitle}</h4>
                 <p>{portfolio.description}</p>
