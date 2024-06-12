@@ -17,7 +17,7 @@
 }
 
 .content-right {
-  width: 38.8125rem;
+  max-width: 38.8125rem;
 }
 
 .content-right h2 {
@@ -68,5 +68,21 @@
     margin-top: 0;
     margin-bottom: 2rem;
     height: 16.40625rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .perks{
+    display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(6, 1fr); 
+  column-gap: 0; 
+  row-gap: 2rem;
+  }
+
+  .perk{
+    max-width: 18rem;
+    width: 100%;
   }
 }
