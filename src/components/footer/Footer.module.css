@@ -307,7 +307,7 @@
 @media screen and (max-width: 1024px) {
   .toggle-content-container{
     position: absolute;
-    right: 1rem;
+    right: 3rem;
     top: 10px;
   }
 
@@ -319,7 +319,13 @@
   }
 
   .background-container{
+    overflow: auto;
     min-height: 100rem;
+
+  }
+
+  .background-container::-webkit-scrollbar{
+    display: none; 
   }
 
 .footer-content{
