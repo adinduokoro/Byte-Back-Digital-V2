@@ -13,10 +13,13 @@
   height: 100%;
 }
 
+
+
 .logo-container {
-  min-width: 9.94488rem;
+  max-width: 9.94488rem;
   cursor: pointer;
   height: 5.385rem;
+  position: relative;
 }
 
 .after-dark {
@@ -25,8 +28,8 @@
   transition: 0.1s ease-in;
   font-family: Yellowtail, sans-serif;
   color: var(--primaryColor);
-  top: 70px;
-  left: 90px;
+  top: 45px;
+  left: 70px;
   z-index: 1000;
   transform: rotate(-13deg);
 }
@@ -172,8 +175,8 @@
   }
 
   .after-dark {
-    top: 3rem;
-    left: 65px;
+    top: 26px;
+    left: 45px;
 
   }
   

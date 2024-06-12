@@ -76,13 +76,12 @@
   .portfolio-card {
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .image-container {
     align-self: center;
-    max-width: 22.1175rem;
-    max-height: 12.0384rem;
+ 
     width: 100%;
     height: auto;
   }
@@ -98,15 +97,23 @@
   .portfolio-card:nth-child(1) {
     grid-column: span 2;
   }
+
+  .portfolio-card:nth-child(1) .image-container{
+    width: 90%;
+  }
 }
 
 /* Additional media query for even smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
   .portfolios {
     grid-template-columns: 1fr;
   }
 
   .portfolio-card:nth-child(1) {
     grid-column: span 1;
+  }
+
+  .portfolio-card:nth-child(1) .image-container{
+    width: 100%;
   }
 }

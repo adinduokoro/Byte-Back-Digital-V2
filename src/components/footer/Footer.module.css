@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   margin-top: -4px;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
 }
 
 .footer-container {
@@ -11,7 +11,7 @@
   height: 29.375rem;
   display: flex;
   justify-content: center;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
 
 }
 
@@ -19,12 +19,12 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 79.875rem;
+  height: 111.6375rem;
   width: 100%;
   z-index: -1;
   overflow: hidden;
   background: var(--backgroundAssetOne);
-  border: 3px solid turquoise;
+  /* border: 3px solid turquoise; */
 
 
 }
@@ -45,7 +45,6 @@
 .toggle-content-container{
   position: relative;
   width: 5rem;
-  border: 2px solid pink;
 
 }
 
@@ -79,7 +78,7 @@
 }
 
 .wire-dark{
-  background: #000;
+  background: var(--primaryColorGreen100);
 }
 
 .triangle {
@@ -92,7 +91,7 @@
   
 }
 .triangle-dark{
-  border-bottom: 26px solid #000;
+  border-bottom: 26px solid var(--primaryColorGreen100);
   
 }
 
@@ -180,9 +179,8 @@
   transition: 0.1s ease-in;
   font-family: Yellowtail, sans-serif;
   color: var(--primaryColor);
-
-  top: 43px;
-  left: 90px;
+  top: 47px;
+  left: 70px;
   z-index: 1000;
   transform: rotate(-13deg);
 }
@@ -301,13 +299,16 @@
 .copyright p {
   color: var(--secondaryColor);
   line-height: 1.25rem;
+  text-align: center;
 }
 
 
 
 @media screen and (max-width: 1024px) {
   .toggle-content-container{
-    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 10px;
   }
 
 
@@ -324,18 +325,21 @@
 .footer-content{
   flex-direction: column;
   height: auto;
-  padding: 4rem;
 }
 .footer-content-left{
   flex-direction: column;
   margin-top: 0;
 }
 
+.logo-contact-details{
+  margin: 5rem 0;
+}
+
 .footer-content-right{
   flex-direction: column;
   align-items: start;
   gap: 3rem;
-
+  margin-bottom: 5rem;
   
 }
 }
