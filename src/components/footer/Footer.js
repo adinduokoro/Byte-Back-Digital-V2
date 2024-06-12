@@ -26,7 +26,6 @@ const Footer = () => {
         <div className="container">
           <div className={styles["footer-content"]}>
             <div className={styles["footer-content-left"]}>
-              <div></div>
               <div className={styles["toggle-content-container"]}>
                 <div className={styles["toggle-content"]}>
                   <div className={styles.light}>
