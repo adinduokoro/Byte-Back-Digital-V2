@@ -70,3 +70,34 @@ header {
   top: 0;
   margin-top: 13.1875rem;
 }
+
+.hero-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    max-width: 30.5625rem;
+  }
+
+  .hero-image {
+    width: 34.15rem;
+height: 30.9rem;
+    right: 2.5rem;
+    margin-top: 25.1875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    position: absolute;
+    width: 23.905rem;
+height: 21.63rem;
+    right: 2.5rem;
+    top: 0;
+    margin-top: 32.6875rem;
+  }
+}
+

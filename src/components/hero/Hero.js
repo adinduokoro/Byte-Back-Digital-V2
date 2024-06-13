@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 
 const Hero = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
-
+  
   return (
     <header
       className={`${styles.hero} ${isDarkModeOn ? styles["hero-dark"] : ""}`}
@@ -24,7 +24,7 @@ const Hero = () => {
           <BackgroundPieceOne />
         </div>
       </div>
-      <div className="container" style={{ zIndex: "20" }}>
+      <div className="container" style={{ zIndex: "20", position: "relative" }}>
         <Navigation />
         <div className={styles["hero-content"]}>
           <h1>Small Business Web Design + Development</h1>

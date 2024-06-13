@@ -73,12 +73,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .content-right .desc{
+    max-width: 23.8125rem;
+  }
+
   .perks{
     display: grid;
   grid-template-columns: 1fr; 
   grid-template-rows: repeat(6, 1fr); 
   column-gap: 0; 
-  row-gap: 2rem;
   }
 
   .perk{
