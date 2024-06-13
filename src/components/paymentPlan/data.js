@@ -20,7 +20,7 @@ export const perks = [
     desc: "High-speed load times that score high on Google’s speed check",
   },
   {
-    title: "E-commerce & SEO",
+    title: "SEO Optimization",
     desc: "Seamlessly boost visibility & prime Google rankings with specialized SEO",
   },
 ];

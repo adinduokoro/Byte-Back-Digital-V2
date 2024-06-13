@@ -81,7 +81,7 @@ const Footer = () => {
                 </div>
                 <div className={styles["logo-contact-details"]}>
                   <a href="">bytebackdigital@gmail.com</a>
-                  <a href="">+1 (470) 222-5985</a>
+                  <a href="">+1 (410) 870-5675</a>
                 </div>
               </div>
             </div>

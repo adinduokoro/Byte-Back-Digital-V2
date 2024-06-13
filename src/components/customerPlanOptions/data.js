@@ -15,7 +15,7 @@ export const paymentOptions = [
   {
     title: "STANDARD",
     subTitle: "5 PAGES",
-    price: "150",
+    price: "199",
     perMonth: true,
     perks: [
       "Unlimited Edits",

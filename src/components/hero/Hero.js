@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 
 const Hero = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
-  
+
   return (
     <header
       className={`${styles.hero} ${isDarkModeOn ? styles["hero-dark"] : ""}`}
