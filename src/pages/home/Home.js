@@ -4,13 +4,13 @@ import { Hero, PaymentPlan, Portfolio, WhatWeOffer, WhoWeAre, Blog, CustomerPlan
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} style={{backgroundColor: "var(--primaryBackgroundColor)"}}>
       <Hero />
       <WhatWeOffer />
       <PaymentPlan />
       <Portfolio />
       <WhoWeAre />
-      {/* <Blog /> */}
+      <Blog />
       <CustomerPlanOptions />
     </div>
   );

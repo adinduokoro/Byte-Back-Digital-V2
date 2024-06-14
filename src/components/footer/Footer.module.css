@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   margin-top: -4px;
+  z-index: 1;
   /* border: 3px solid orange; */
 }
 
@@ -22,11 +23,13 @@
   height: 111.6375rem;
   width: 100%;
   z-index: -1;
-  overflow: hidden;
+  overflow: auto;
   background: var(--backgroundAssetOne);
   /* border: 3px solid turquoise; */
+}
 
-
+.background-container::-webkit-scrollbar{
+  display: none;
 }
 
 .footer-content {

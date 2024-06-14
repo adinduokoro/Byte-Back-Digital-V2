@@ -92,7 +92,6 @@
 
 /* Body styles */
 body {
-  background-color: var(--primaryBackgroundColor);
   font-family: var(--font);
   color: var(--bodyText);
   min-width: 425px;
@@ -106,8 +105,8 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: var(--primaryBackgroundColor);
-  margin-bottom: -3px;
+  background-color: transparent;
+  width: 100%;
 }
 
 /* Container styles */
@@ -117,6 +116,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 0 2%; 
+  z-index: 3;
 }
 
 /* List styles */
