@@ -39,7 +39,7 @@ const BackgroundPieceTwo = () => {
       xmlns="http://www.w3.org/2000/svg"
       style={{
         position: "absolute",
-        top: "-5px",
+        top: "0",
         left: "0",
         minWidth: "90rem",
         minHeight: "49.49056rem",

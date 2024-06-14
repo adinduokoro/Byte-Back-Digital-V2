@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap");
 
 /* Reset default styles */
 * {
@@ -95,7 +95,6 @@ body {
   font-family: var(--font);
   color: var(--bodyText);
   min-width: 425px;
-  
 }
 
 /* Section styles */
@@ -115,7 +114,7 @@ section {
   max-width: 65rem;
   width: 100%;
   height: 100%;
-  padding: 0 2%; 
+  padding: 0 2%;
   z-index: 3;
 }
 
@@ -190,7 +189,7 @@ button {
   transition: 0.3s ease;
 }
 
-.btn-one-dark{
+.btn-one-dark {
   background: 0 0;
   border: 1px solid #444;
   border-radius: 5px;
@@ -198,7 +197,7 @@ button {
   color: var(--primaryColor);
   font-size: 12px;
   text-shadow: 0 -1px 0 #000;
-  animation: glow .8s ease-out infinite alternate
+  animation: glow 0.8s ease-out infinite alternate;
 }
 
 .btn-two {
@@ -325,9 +324,9 @@ button {
   transition: 0.3s ease;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .container {
-    padding: 0 6%; 
+    padding: 0 6%;
   }
 
   button {
@@ -337,7 +336,7 @@ button {
   .btn-one {
     color: var(--primaryTextColor);
     width: 9.5475rem;
-height: 2.625rem;
+    height: 2.625rem;
     border-radius: 3px;
     font-weight: 700;
     padding: 3.75px 7.5px;
@@ -347,18 +346,18 @@ height: 2.625rem;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 2.75rem;
     font-weight: 700;
   }
 
-h2{
-  font-size: 1.75rem;
-  font-weight: 800;
-}
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
 
   .container {
-    padding: 0 4%; 
+    padding: 0 4%;
   }
 }
