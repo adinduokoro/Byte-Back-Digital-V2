@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import styles from "./About.module.css";
+import { useParams } from "react-router-dom";
+import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
+import { useDispatch } from "react-redux";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const { about } = useParams();
+  const dispatch = useDispatch();
 
-export default About
+  dispatch(SET_CURRENT_PATH(about));
+
+  return (
+    <div
+      className={styles.about}
+      style={{ backgroundColor: "var(--primaryBackgroundColor)" }}
+    ></div>
+  );
+};
+
+export default About;
