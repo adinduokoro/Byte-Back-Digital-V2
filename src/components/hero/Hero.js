@@ -5,6 +5,7 @@ import { BackgroundPieceOne } from "../../assets/background";
 import heroImage from "../../assets/hero-image.png";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
@@ -33,9 +34,12 @@ const Hero = () => {
             custom-coded websites with exceptional results, starting at
             $199/month.
           </p>
+          <Link to="/contact">
           <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>
             SEND A MESSAGE
           </button>
+          
+          </Link>
         </div>
         <div className={styles["hero-image"]}>
           <img src={heroImage} alt="hero image" />

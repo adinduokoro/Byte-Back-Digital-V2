@@ -1,0 +1,19 @@
+.page-header{
+  width: 100%;
+  height: 25rem;
+  border: 3px solid pink;
+  background: darkgreen;
+
+}
+
+.page-header-content{
+  display: flex;
+align-items: center;
+height: 100%;
+justify-content: center;
+}
+
+.page-header-content h1 {
+  color: var(--primaryColorGreen900);
+  margin-top: 127PX;
+}

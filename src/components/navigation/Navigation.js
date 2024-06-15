@@ -23,7 +23,10 @@ const Navigation = () => {
       <div className="container">
         <div className={styles["navigation-content"]}>
           <div className={styles["logo-container"]}>
+            <Link to="/">
             <Logo />
+            
+            </Link>
             {isDarkModeOn ? (
               <div className={styles["after-dark"]}>
                 <span>A</span>

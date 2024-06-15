@@ -4,6 +4,7 @@ import { paymentOptions } from "./data";
 import checkmark from "../../assets/checkmark-outline.svg";
 import { useSelector } from "react-redux";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
+import { Link } from "react-router-dom";
 
 const CustomerPlanOptions = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
@@ -21,9 +22,11 @@ const CustomerPlanOptions = () => {
                 } `}
                 key={index}
               >
-                <div className={`${styles["plan-title-container"]} ${
-                  isDarkModeOn ? styles["plan-title-container-dark"] : ""
-                } `}>
+                <div
+                  className={`${styles["plan-title-container"]} ${
+                    isDarkModeOn ? styles["plan-title-container-dark"] : ""
+                  } `}
+                >
                   <h2>{option.title}</h2>
                 </div>
                 <span>{option.subTitle}</span>
@@ -44,7 +47,13 @@ const CustomerPlanOptions = () => {
                     </div>
                   ))}
                 </ul>
-                <button className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}` }>Contact Us</button>
+                <Link to="/contact">
+                  <button
+                    className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}`}
+                  >
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             ))}
           </div>

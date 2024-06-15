@@ -8,6 +8,7 @@ import {
   SET_DARK_MODE,
   selectIsDarkModeOn,
 } from "../../redux/slice/themeSlice";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const dispatch = useDispatch();
@@ -91,7 +92,9 @@ const Footer = () => {
                 <div className={styles.ruler}></div>
                 <ul>
                   {navLinks.map((link, index) => (
-                    <li key={index}>{link.name}</li>
+                    <li key={index}>
+                      <Link to={link.path}>{link.name}</Link>
+                    </li>
                   ))}
                 </ul>
               </div>

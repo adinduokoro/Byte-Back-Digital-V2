@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import {Layout} from "./components"
-import { Home } from './pages';
+import { Home, Contact } from './pages';
 import { useSelector } from 'react-redux';
 import { selectIsDarkModeOn } from './redux/slice/themeSlice';
 
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Layout />}>
           <Route index element={<Home />} />
+          <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
     </div>
