@@ -11,9 +11,8 @@ const PageHeader = ({ title }) => {
     <header className={styles["page-header"]} style={{ zIndex: "7" }}>
       <di className="container">
         <div className={styles["page-header-content"]}>
-        <Navigation />
-        <h1>{title}</h1>
-
+          <Navigation />
+          <h1>{title}</h1>
         </div>
       </di>
     </header>
