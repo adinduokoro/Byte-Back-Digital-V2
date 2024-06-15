@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
-import HamburgerMenu from "../../assets/hamburgerMenu"
+import HamburgerMenu from "../../assets/hamburgerMenu";
 import {
   SET_DARK_MODE,
   selectIsDarkModeOn,
@@ -24,8 +24,7 @@ const Navigation = () => {
         <div className={styles["navigation-content"]}>
           <div className={styles["logo-container"]}>
             <Link to="/">
-            <Logo />
-            
+              <Logo />
             </Link>
             {isDarkModeOn ? (
               <div className={styles["after-dark"]}>

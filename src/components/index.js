@@ -11,3 +11,4 @@ export { default as Blog } from "./blog/Blog";
 export { default as CustomerPlanOptions } from "./customerPlanOptions/CustomerPlanOptions";
 export { default as Footer } from "./footer/Footer";
 export { default as PageHeader } from "./pageHeader/PageHeader";
+export { default as HeaderLayout } from "./layout/HeaderLayout";

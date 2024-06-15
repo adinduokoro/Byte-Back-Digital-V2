@@ -2,7 +2,7 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import themeReducer from "./slice/themeSlice";
 
 const rootReducer = combineReducers({
-  theme: themeReducer
+  theme: themeReducer,
 })
 
 const store = configureStore({

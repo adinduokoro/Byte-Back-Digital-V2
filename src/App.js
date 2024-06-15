@@ -1,24 +1,25 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {Layout} from "./components"
-import { Home, Contact } from './pages';
-import { useSelector } from 'react-redux';
-import { selectIsDarkModeOn } from './redux/slice/themeSlice';
-
+import { HeaderLayout, Layout } from "./components";
+import { Home, Contact } from "./pages";
+import { useSelector } from "react-redux";
+import { selectIsDarkModeOn } from "./redux/slice/themeSlice";
 
 function App() {
-  const isDarkModeOn = useSelector(selectIsDarkModeOn)
-  const theme = isDarkModeOn ? "dark" : "light"
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+  const theme = isDarkModeOn ? "dark" : "light";
 
   return (
     <div className="App" data-theme={theme}>
       <ToastContainer />
       <Routes>
-        <Route path="/" element={ <Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='contact' element={<Contact />} />
+          <Route element={<HeaderLayout />}>
+            <Route path=":contact" element={<Contact />} />
+          </Route>
         </Route>
       </Routes>
     </div>

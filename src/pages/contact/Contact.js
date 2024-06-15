@@ -8,7 +8,7 @@ const Contact = () => {
       className={styles.contact}
       style={{ backgroundColor: "var(--primaryBackgroundColor)" }}
     >
-      <PageHeader title={"Contact Us"} />
+      
     </div>
   );
 };
