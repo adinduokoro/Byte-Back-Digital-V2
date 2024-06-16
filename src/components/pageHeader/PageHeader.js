@@ -1,22 +1,34 @@
 import React from "react";
 import styles from "./PageHeader.module.css";
-import { Navigation } from "../../components";
+import { Navigation, SpaceContent } from "../../components";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { useSelector } from "react-redux";
 import { selectCurrentPath } from "../../redux/slice/linkSlice";
 
-const PageHeader = ({ title }) => {
+const PageHeader = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
   const currentPath = useSelector(selectCurrentPath);
 
   return (
-    <header className={styles["page-header"]} style={{ zIndex: "7" }}>
-      <di className="container">
+    <header
+      className={`${styles["page-header"]} ${
+        isDarkModeOn ? styles["page-header-dark"] : ""
+      }`}
+      style={{ zIndex: "7" }}
+    >
+      <div
+        className={`${styles["background-container"]} ${
+          isDarkModeOn ? styles["background-container-dark"] : ""
+        }`}
+      >
+        {isDarkModeOn ? <SpaceContent /> : null}
+      </div>
+      <div className="container">
         <div className={styles["page-header-content"]}>
           <Navigation />
           <h1>{currentPath}</h1>
         </div>
-      </di>
+      </div>
     </header>
   );
 };

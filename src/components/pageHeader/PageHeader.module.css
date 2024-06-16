@@ -1,9 +1,30 @@
 .page-header{
   width: 100%;
   height: 25rem;
-  border: 3px solid pink;
   background: lightgray;
 
+}
+
+.page-header-dark{
+  background: linear-gradient(
+    301deg,
+    var(--primaryColorGreen100) 34.39%,
+    var(--primaryColorGreen200) 100%
+  );
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1; /* Ensure container is the base layer */
+}
+
+.background-container-dark {
+  background: rgba(0, 40, 60, 0.3);
 }
 
 .page-header-content{
