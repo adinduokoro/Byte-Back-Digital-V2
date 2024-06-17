@@ -9,6 +9,7 @@ import {
   SET_DARK_MODE,
   selectIsDarkModeOn,
 } from "../../redux/slice/themeSlice";
+import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -18,12 +19,16 @@ const Navigation = () => {
     dispatch(SET_DARK_MODE(!isDarkModeOn));
   };
 
+  const handleLinkClick = (path) => {
+    dispatch(SET_CURRENT_PATH(path));
+  };
+
   return (
     <nav className={styles.navigation}>
       <div className="container">
         <div className={styles["navigation-content"]}>
           <div className={styles["logo-container"]}>
-            <Link to="/">
+            <Link to="/" onClick={() => handleLinkClick("/")}>
               <Logo />
             </Link>
             {isDarkModeOn ? (
@@ -44,7 +49,12 @@ const Navigation = () => {
             <ul className={styles["nav-links"]}>
               {navLinks.map((link, index) => (
                 <li className="label-text" key={index}>
-                  <Link to={link.path}>{link.name}</Link>
+                  <Link
+                    to={link.path}
+                    onClick={() => handleLinkClick(link.path)}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

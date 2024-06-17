@@ -5,10 +5,11 @@ import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 import { useDispatch } from "react-redux";
 
 const About = () => {
-  const { id } = useParams();
   const dispatch = useDispatch();
 
-  dispatch(SET_CURRENT_PATH(id));
+  useEffect(() => {
+    dispatch(SET_CURRENT_PATH("about"));
+}, [dispatch]);
 
   return (
     <div
