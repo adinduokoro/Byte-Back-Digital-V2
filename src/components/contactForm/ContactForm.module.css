@@ -1,0 +1,11 @@
+.contact-form{
+    height: 37.5rem;
+    border: 3px solid green;
+}
+
+.contact-form-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}

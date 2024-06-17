@@ -9,6 +9,7 @@ export { default as Portfolio } from "./portfolio/Portfolio";
 export { default as WhoWeAre } from "./whoWeAre/WhoWeAre";
 export { default as Blog } from "./blog/Blog";
 export { default as CustomerPlanOptions } from "./customerPlanOptions/CustomerPlanOptions";
+export { default as ContactForm } from "./contactForm/ContactForm";
 export { default as Footer } from "./footer/Footer";
 export { default as PageHeader } from "./pageHeader/PageHeader";
 export { default as HeaderLayout } from "./layout/HeaderLayout";

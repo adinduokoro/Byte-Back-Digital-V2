@@ -21,7 +21,7 @@ const PageHeader = () => {
           isDarkModeOn ? styles["background-container-dark"] : ""
         }`}
       >
-        {isDarkModeOn ? <SpaceContent /> : null}
+        {isDarkModeOn ? <div className={styles["space-container"]}><SpaceContent /></div> : null}
       </div>
       <div className="container">
         <div className={styles["page-header-content"]}>

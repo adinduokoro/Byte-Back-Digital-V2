@@ -2,6 +2,7 @@
   width: 100%;
   height: 25rem;
   background: lightgray;
+
 }
 
 .page-header-dark{
@@ -22,7 +23,6 @@
   z-index: 1; 
 }
 
-
 .page-header-content{
   display: flex;
 align-items: center;
@@ -33,4 +33,11 @@ justify-content: center;
 .page-header-content h1 {
   color: var(--primaryColorGreen900);
   margin-top: 127PX;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-header{
+    overflow: hidden;
+    height: 13.75rem;
+  }
 }
