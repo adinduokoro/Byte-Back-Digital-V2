@@ -2,12 +2,11 @@
   width: 100%;
   height: 25rem;
   background: lightgray;
-
 }
 
 .page-header-dark{
   background: linear-gradient(
-    301deg,
+    360deg,
     var(--primaryColorGreen100) 34.39%,
     var(--primaryColorGreen200) 100%
   );
@@ -20,12 +19,9 @@
   width: 100%;
   height: 100%;
   background-color: transparent;
-  z-index: 1; /* Ensure container is the base layer */
+  z-index: 1; 
 }
 
-.background-container-dark {
-  background: rgba(0, 40, 60, 0.3);
-}
 
 .page-header-content{
   display: flex;

@@ -18,9 +18,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route element={<HeaderLayout />}>
-            <Route path=":about" element={<About />} />
-            <Route path=":services" element={<Services />} />
-            <Route path=":contact" element={<Contact />} />
+            <Route path="about/:id" element={<About />} />
+            <Route path="services/:id" element={<Services />} />
+            <Route path="contact/:id" element={<Contact />} />
           </Route>
         </Route>
       </Routes>

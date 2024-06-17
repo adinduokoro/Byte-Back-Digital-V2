@@ -17,7 +17,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 114.6375rem;
+  height: 80rem;
   width: 100%;
   z-index: -1;
   overflow: hidden;
@@ -306,11 +306,9 @@
 @media screen and (max-width: 1024px) {
   .toggle-content-container{
     position: absolute;
-    right: 3rem;
-    top: 10px;
+    right:2.5rem;
+    top: 12.5rem;
   }
-
-
 
   .footer-container{
     height: fit-content;

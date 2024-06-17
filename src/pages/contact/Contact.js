@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Contact.module.css";
 import { useParams } from "react-router-dom";
 import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 import { useDispatch } from "react-redux";
 
 const Contact = () => {
-  const { contact } = useParams();
+  const { id } = useParams();
   const dispatch = useDispatch();
 
-  dispatch(SET_CURRENT_PATH(contact));
+  dispatch(SET_CURRENT_PATH(id));
 
   return (
     <div
