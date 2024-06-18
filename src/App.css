@@ -64,6 +64,7 @@
   /* Misc Colors */
   --bannerColor: #a7ffa4;
   --planCardText: var(--primaryColorGreen100);
+  --blobColor: var(--primaryColor);
 }
 
 [data-theme="dark"] {
@@ -86,15 +87,19 @@
   /* Misc Colors */
   --bannerColor: #000;
   --planCardText: var(--primaryColorGreen900);
+  --blobColor: var(--primaryColorGreen200)
+
 
   /* --------------------------------------------------------- */
+}
+.App{
+  
 }
 
 /* Body styles */
 body {
   font-family: var(--font);
   color: var(--bodyText);
-  min-width: 425px;
 }
 
 /* Section styles */
