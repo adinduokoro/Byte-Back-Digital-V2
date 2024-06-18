@@ -20,7 +20,7 @@
   height: 80rem;
   width: 100%;
   z-index: -1;
-  overflow: hidden;
+  overflow-x: auto;
   background: var(--backgroundAssetOne);
 }
 
