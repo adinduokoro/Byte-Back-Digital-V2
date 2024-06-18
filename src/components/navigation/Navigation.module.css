@@ -122,6 +122,7 @@
 
 .hamburger-menu{
   display: none;
+  cursor: pointer;
 }
 
 .top-toggler-container {
@@ -172,6 +173,7 @@
 
   .nav-buttons ul {
     display: none;
+    /* Start here with navigation menu */
   }
 
   .after-dark {

@@ -14,6 +14,9 @@ const Footer = () => {
   const dispatch = useDispatch();
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
 
+  const date = new Date()
+  const year = date.getFullYear()
+
   const handleToggle = () => {
     dispatch(SET_DARK_MODE(!isDarkModeOn));
   };
@@ -114,7 +117,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>Copyright © 2024 | Byte Back Digital | All Rights Reserved</p>
+        <p>Copyright © {year} | Byte Back Digital | All Rights Reserved</p>
       </div>
     </footer>
   );

@@ -80,6 +80,7 @@
 .form-contact textarea {
   height: 12.5rem;
   padding-top: 0.88rem;
+  resize: none;
 }
 .form-contact textarea::placeholder {
   font-family: var(--font);

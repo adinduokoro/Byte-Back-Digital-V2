@@ -1,7 +1,11 @@
 .page-header{
   width: 100%;
   height: 25rem;
-  background: lightgray;
+  background: linear-gradient(
+    301deg,
+    var(--primaryColor) 34.39%,
+    var(--primaryColorGreen200) 100%
+  );
 
 }
 
