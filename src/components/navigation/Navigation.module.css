@@ -13,8 +13,6 @@
   height: 100%;
 }
 
-
-
 .logo-container {
   max-width: 9.94488rem;
   cursor: pointer;
@@ -115,6 +113,10 @@
   font-weight: 700;
 }
 
+.close-icon{
+  display: none;
+}
+
 .button-container {
   position: relative;
   width: 35px;
@@ -169,11 +171,41 @@
   .nav-buttons {
     justify-content: end;
     gap: 3rem;
+    position: relative;
   }
 
-  .nav-links {
-    display: none;
-    /* Start here with navigation menu */
+  .close-icon{
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+  }
+
+  .nav-buttons ul {
+border: 1px solid green;
+display: flex;
+flex-direction: column;
+position: fixed;
+top: 0;
+right: 0;
+height: 100%;
+background-color: black;
+z-index: 5555;
+width: 40%;
+padding: 10rem 2rem 20rem;
+opacity: 90%;
+  }
+
+  .open{
+
+  }
+
+  .nav-buttons li{
+border: 1px solid red;
+width: 100%;
+font-size: 2rem;
+font-weight: 400;
+
   }
 
   .after-dark {

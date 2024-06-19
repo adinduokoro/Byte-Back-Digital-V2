@@ -5,6 +5,8 @@ import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
 import HamburgerMenu from "../../assets/hamburgerMenu";
+import CloseIcon from "../../assets/close-icon";
+
 import {
   SET_DARK_MODE,
   selectIsDarkModeOn,
@@ -53,11 +55,15 @@ const Navigation = () => {
                     to={link.path}
                     onClick={() => handleLinkClick(link.path)}
                   >
-                    {link.name}
+                    <span>{link.name}</span>
                   </Link>
                 </li>
               ))}
+              <div className={styles["close-icon"]}>
+                <CloseIcon />
+              </div>
             </ul>
+
             <div className={styles["button-container"]}>
               <div className={styles["hamburger-menu"]}>
                 <HamburgerMenu />
