@@ -6,6 +6,8 @@
     var(--primaryColor) 34.39%,
     var(--primaryColorGreen200) 100%
   );
+  z-index: 100;
+  overflow: visible`;
 
 }
 
