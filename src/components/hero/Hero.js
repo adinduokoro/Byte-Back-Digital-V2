@@ -25,7 +25,7 @@ const Hero = () => {
           <BackgroundPieceOne />
         </div>
       </div>
-      <div className="container" style={{ zIndex: "20", position: "relative" }}>
+      <div className="container">
         {/* <Navigation /> */}
         <div className={styles["hero-content"]}>
           <h1>Small Business Web Design + Development</h1>
