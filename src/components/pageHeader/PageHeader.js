@@ -14,7 +14,7 @@ const PageHeader = () => {
       className={`${styles["page-header"]} ${
         isDarkModeOn ? styles["page-header-dark"] : ""
       }`}
-      style={{ zIndex: "7" }}
+      style={{ zIndex: "1" }}
     >
       <div
         className={`${styles["background-container"]} ${
@@ -25,7 +25,7 @@ const PageHeader = () => {
       </div>
       <div className="container">
         <div className={styles["page-header-content"]}>
-          <Navigation />
+          {/* <Navigation /> */}
           <h1>{currentPath}</h1>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Footer } from "../../components";
+import { Footer, Navigation } from "../../components";
 
 const Layout = () => {
   return (
     <div>
+      <Navigation />
       <Outlet />
       <Footer />
     </div>

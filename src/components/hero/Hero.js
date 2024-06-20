@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="container" style={{ zIndex: "20", position: "relative" }}>
-        <Navigation />
+        {/* <Navigation /> */}
         <div className={styles["hero-content"]}>
           <h1>Small Business Web Design + Development</h1>
           <p>

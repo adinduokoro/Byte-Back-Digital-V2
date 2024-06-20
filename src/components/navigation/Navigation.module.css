@@ -4,6 +4,8 @@
   left: 0;
   height: 7.885rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation-content {
