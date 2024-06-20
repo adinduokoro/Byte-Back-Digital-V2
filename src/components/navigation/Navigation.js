@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
@@ -14,8 +14,17 @@ import {
 import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(true)
   const dispatch = useDispatch();
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   const handleToggle = () => {
     dispatch(SET_DARK_MODE(!isDarkModeOn));
@@ -23,6 +32,7 @@ const Navigation = () => {
 
   const handleLinkClick = (path) => {
     dispatch(SET_CURRENT_PATH(path));
+    setIsOpen(false)
   };
 
   return (
@@ -48,9 +58,9 @@ const Navigation = () => {
             ) : null}
           </div>
           <div className={styles["nav-buttons"]}>
-            <ul className={styles["nav-links"]}>
+            <ul className={`${styles["nav-links"]} ${isOpen ? styles.open : ""}`}>
               {navLinks.map((link, index) => (
-                <li className="label-text" key={index}>
+                <li className={`${styles["nav-link"]} ${isOpen ? styles["show-link"] : ""}`} key={index}>
                   <Link
                     to={link.path}
                     onClick={() => handleLinkClick(link.path)}
@@ -59,13 +69,13 @@ const Navigation = () => {
                   </Link>
                 </li>
               ))}
-              <div className={styles["close-icon"]}>
+              <div className={styles["close-icon"]} onClick={closeMenu}>
                 <CloseIcon />
               </div>
             </ul>
 
             <div className={styles["button-container"]}>
-              <div className={styles["hamburger-menu"]}>
+              <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <HamburgerMenu />
               </div>
               <button

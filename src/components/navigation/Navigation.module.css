@@ -107,7 +107,7 @@
   gap: 3rem;
 }
 
-.navigation-content ul {
+.nav-links {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -184,29 +184,75 @@
     position: absolute;
     top: 1.5rem;
     right: 3rem;
+    cursor: pointer;
   }
 
-  .nav-buttons ul {
+  .nav-links {
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -50rem;
     height: 100%;
-    background-color: black;
+    background-color: var(--primaryBackgroundColor);
     z-index: 5555;
     width: 40%;
     padding: 10rem 2rem 20rem;
   }
 
-  .open {
+  .nav-links {
+    transition: right 0.4s;
   }
-
-  .nav-buttons li {
-    border: 1px solid red;
+  
+  .open{
+    right: 0;
+  }
+  
+  /* Set the animation */
+  .nav-link {
+    margin-left: 10rem;
     width: 100%;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 400;    
+  }
+
+  .nav-link:nth-child(1){
+    transition-delay: .1s;
+  }
+
+  .nav-link:nth-child(2){
+    transition-delay: .2s;
+  }
+  .nav-link:nth-child(3){
+    transition-delay: .3s;
+  }
+  .nav-link:nth-child(4){
+    transition-delay: .4s;
+  }
+  .nav-link:nth-child(5){
+    transition-delay: .5s;
+  }
+  
+
+  /* Set animation timing */
+  .nav-link {
+    transition: margin .4s ease-out;
+  }
+
+
+  /* Final frame */
+  .show-link{
+  margin-left: 0;
+  }
+
+
+
+  .nav-links span {
+    transition: margin 0.4s;
+  }
+
+  .nav-links li:hover span {
+    margin-left: 2.5rem;
   }
 
   .after-dark {
