@@ -66,6 +66,7 @@
   --planCardText: var(--primaryColorGreen100);
   --blobColor: var(--primaryColor);
   --bodyColor: var(--primaryColorGreen900);
+ 
 }
 
 [data-theme="dark"] {
@@ -90,6 +91,8 @@
   --planCardText: var(--primaryColorGreen900);
   --blobColor: var(--primaryColorGreen200);
   --bodyColor: var(--primaryColorGreen100);
+ 
+
 
   /* --------------------------------------------------------- */
 }
@@ -101,6 +104,8 @@ body {
   font-family: var(--font);
   color: var(--bodyText);
   background: var(--primaryColorGreen100);
+  min-width: 425px;
+  width: 100%;
 }
 
 /* Section styles */

@@ -85,7 +85,7 @@ const Navigation = () => {
                 <CloseIcon />
               </div>
             </ul>
-
+              <div className={`${styles.modal} ${isMenuOpen ? styles["modal-open"] : ""}`}>modal</div>
             <div className={styles["button-container"]}>
               <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <HamburgerMenu />
