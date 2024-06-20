@@ -5,6 +5,5 @@ RewriteEngine On
 RewriteBase /
 
 # Redirect all traffic to the index.html except for existing files and directories
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]
