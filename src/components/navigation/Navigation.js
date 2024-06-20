@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import { navLinks } from "./data";
 import Logo from "../../assets/logo";
@@ -12,18 +12,21 @@ import {
   selectIsDarkModeOn,
 } from "../../redux/slice/themeSlice";
 import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
+import { SET_MENU_TOGGLE, selectIsMenuOpen } from "../../redux/slice/menuSlice";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(true)
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
+  const isMenuOpen = useSelector(selectIsMenuOpen);
+  const [isClosing, setIsClosing] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    dispatch(SET_MENU_TOGGLE(!isMenuOpen));
   };
 
   const closeMenu = () => {
-    setIsOpen(false);
+    dispatch(SET_MENU_TOGGLE(false));
   };
 
   const handleToggle = () => {
@@ -31,8 +34,13 @@ const Navigation = () => {
   };
 
   const handleLinkClick = (path) => {
-    dispatch(SET_CURRENT_PATH(path));
-    setIsOpen(false)
+    setIsClosing(true);
+    setTimeout(() => {
+      dispatch(SET_CURRENT_PATH(path));
+      dispatch(SET_MENU_TOGGLE(false));
+      navigate(path);
+      setIsClosing(false);
+    }, 200); // Match this delay with your transition duration
   };
 
   return (
@@ -58,9 +66,9 @@ const Navigation = () => {
             ) : null}
           </div>
           <div className={styles["nav-buttons"]}>
-            <ul className={`${styles["nav-links"]} ${isOpen ? styles.open : ""}`}>
+            <ul className={`${styles["nav-links"]} ${isMenuOpen ? styles.open : ""} ${isClosing ? styles.closing : ""}`}>
               {navLinks.map((link, index) => (
-                <li className={`${styles["nav-link"]} ${isOpen ? styles["show-link"] : ""}`} key={index}>
+                <li className={`${styles["nav-link"]} ${isMenuOpen ? styles["show-link"] : ""}`} key={index}>
                   <Link
                     to={link.path}
                     onClick={() => handleLinkClick(link.path)}

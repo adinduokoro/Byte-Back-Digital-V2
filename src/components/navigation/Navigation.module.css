@@ -111,7 +111,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: var(--secondaryColor);
+  color: var(--tertiaryColor);
   z-index: 5;
 }
 
@@ -197,10 +197,15 @@
     background-color: var(--primaryBackgroundColor);
     z-index: 5555;
     width: 40%;
-    padding: 10rem 2rem 20rem;
+    padding: 10rem 4rem 20rem;
   }
 
   .nav-links {
+    transition: right 0.4s;
+  }
+
+  .nav-links.closing {
+    right: -50rem; /* or whatever value represents the closed state */
     transition: right 0.4s;
   }
   
