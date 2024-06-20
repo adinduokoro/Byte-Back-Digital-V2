@@ -1,9 +1,0 @@
-# Enable Rewrite Engine
-RewriteEngine On
-
-# Handle Direct Access to Routes in React App
-RewriteBase /
-
-# Redirect all traffic to the index.html except for existing files and directories
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
