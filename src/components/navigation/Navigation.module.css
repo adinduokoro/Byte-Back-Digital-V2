@@ -198,9 +198,9 @@
     right: -50rem;
     height: 100%;
     background-color: var(--primaryBackgroundColor);
-    z-index: 555555555;
+    z-index: 555;
     width: 40%;
-    padding: 10rem 4rem 20rem;
+    padding: 10rem 4rem;
   }
 
   .nav-links {
