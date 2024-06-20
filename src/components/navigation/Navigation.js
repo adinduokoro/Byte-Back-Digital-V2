@@ -16,10 +16,8 @@ import { SET_MENU_TOGGLE, selectIsMenuOpen } from "../../redux/slice/menuSlice";
 
 const Navigation = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
   const isMenuOpen = useSelector(selectIsMenuOpen);
-  const [isClosing, setIsClosing] = useState(false);
 
   const toggleMenu = () => {
     dispatch(SET_MENU_TOGGLE(!isMenuOpen));
@@ -34,13 +32,10 @@ const Navigation = () => {
   };
 
   const handleLinkClick = (path) => {
-    setIsClosing(true);
     setTimeout(() => {
       dispatch(SET_CURRENT_PATH(path));
       dispatch(SET_MENU_TOGGLE(false));
-      navigate(path);
-      setIsClosing(false);
-    }, 200); // Match this delay with your transition duration
+    }, 200)
   };
 
   return (
@@ -66,9 +61,18 @@ const Navigation = () => {
             ) : null}
           </div>
           <div className={styles["nav-buttons"]}>
-            <ul className={`${styles["nav-links"]} ${isMenuOpen ? styles.open : ""} ${isClosing ? styles.closing : ""}`}>
+            <ul
+              className={`${styles["nav-links"]} ${
+                isMenuOpen ? styles.open : ""
+              }`}
+            >
               {navLinks.map((link, index) => (
-                <li className={`${styles["nav-link"]} ${isMenuOpen ? styles["show-link"] : ""}`} key={index}>
+                <li
+                  className={`${styles["nav-link"]} ${
+                    isMenuOpen ? styles["show-link"] : ""
+                  }`}
+                  key={index}
+                >
                   <Link
                     to={link.path}
                     onClick={() => handleLinkClick(link.path)}
