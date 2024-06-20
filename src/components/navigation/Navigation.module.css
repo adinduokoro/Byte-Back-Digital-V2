@@ -280,3 +280,15 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media screen and (max-width: 768px){
+  .nav-links{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .nav-links{
+  width: 100%;
+ }
+}
