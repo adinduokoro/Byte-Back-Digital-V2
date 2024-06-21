@@ -29,11 +29,11 @@ const Hero = () => {
         {/* <Navigation /> */}
         <div className={styles["hero-content"]}>
           <h1>Small Business Web Design + Development</h1>
-          <p>
+          <h2>
             No page builders or WordPress—located in Maryland, we deliver 100%
             custom-coded websites with exceptional results, starting at
             $199/month.
-          </p>
+          </h2>
           <Link to="/contact">
           <button className={`btn-one ${isDarkModeOn ? "btn-one-dark" : ""}`}>
             SEND A MESSAGE

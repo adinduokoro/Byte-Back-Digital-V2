@@ -1,0 +1,12 @@
+.quality-quantity{
+  min-height: 43.5rem;
+  z-index: 2;
+  border: 2px solid orange;
+  padding-bottom: 10rem;
+
+}
+
+.quality-quantity-content{
+  height: 100%;
+  border: 2px solid purple;
+}

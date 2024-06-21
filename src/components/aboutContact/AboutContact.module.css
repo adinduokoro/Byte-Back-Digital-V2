@@ -1,0 +1,12 @@
+.about-contact{
+  min-height: 44.89rem;
+  z-index: 2;
+  border: 2px solid white;
+  padding-bottom: 10rem;
+
+}
+
+.about-contact-content{
+  height: 100%;
+  border: 2px solid turquoise;
+}

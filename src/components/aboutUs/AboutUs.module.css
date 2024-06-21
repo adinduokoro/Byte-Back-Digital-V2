@@ -1,0 +1,29 @@
+.about-us {
+  min-height: 37.15rem;
+  z-index: 2;
+  padding-bottom: 10rem;
+}
+
+.about-us-content {
+  height: 100%;
+  display: flex;
+}
+
+.left img {
+  margin: 0 2.8125rem 1.875rem 0;
+}
+
+.right span {
+  color: var(--primaryColor);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.right h2{
+  color: var(--tertiaryColor);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+.right p {
+  color: var(--bodyText);
+  margin-bottom: 1.5625rem;
+}

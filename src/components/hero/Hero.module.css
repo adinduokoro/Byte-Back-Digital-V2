@@ -58,8 +58,14 @@ header {
 }
 
 .hero-content h1,
-.hero-content p {
+.hero-content h2 {
   color: var(--secondaryColor);
+}
+
+.hero-content h2{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 170%;
 }
 
 .hero-image {

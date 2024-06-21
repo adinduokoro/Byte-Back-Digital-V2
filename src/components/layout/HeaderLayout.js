@@ -8,7 +8,7 @@ const HeaderLayout = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "10rem",
+        gap: "4rem",
         backgroundColor: "var(--primaryBackgroundColor)",
       }}
     >
