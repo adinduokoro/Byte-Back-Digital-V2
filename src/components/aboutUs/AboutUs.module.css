@@ -27,3 +27,9 @@
   color: var(--bodyText);
   margin-bottom: 1.5625rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .about-us-content{
+    flex-direction: column;
+  }
+}

@@ -105,3 +105,21 @@
 .card p {
   align-self: baseline;
 }
+
+@media screen and (max-width: 1024px) {
+  .quality-quantity-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .cards-container{
+    flex-direction: column;
+  }
+  .card-ruler{
+    display: none;
+  }
+
+  .card {
+    width: 20rem;
+    padding: 1rem 0;
+  }
+}

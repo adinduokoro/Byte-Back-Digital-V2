@@ -1,19 +1,64 @@
-.about-contact{
-  min-height: 44.89rem;
+.about-contact {
+  min-height: 45rem;
   z-index: 2;
-  /* border: 2px solid white; */
-  padding-bottom: 10rem;
-
 }
 
-.about-contact-content{
-  margin-top: 4rem;
+.about-contact-content {
+  padding-top: 4rem;
   height: 100%;
-  /* border: 2px solid turquoise; */
   display: flex;
   justify-content: center;
 }
 
-.right{
+.card {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-details,
+.email-details {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--primaryColor);
+}
+
+.card h2 {
+  font-size: 1.125rem;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--bodyText);
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+}
+
+.right {
   width: 32rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-contact-content {
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .right {
+    width: 24rem;
+  }
 }
