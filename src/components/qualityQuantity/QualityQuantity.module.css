@@ -1,12 +1,107 @@
-.quality-quantity{
+.quality-quantity {
   min-height: 43.5rem;
   z-index: 2;
-  border: 2px solid orange;
   padding-bottom: 10rem;
-
 }
 
-.quality-quantity-content{
+.quality-quantity-content {
   height: 100%;
-  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.quality-quantity-content h2 {
+  color: var(--tertiaryColor);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.quality-quantity-content h2 span {
+  color: var(--primaryColor);
+}
+
+.quality-quantity-content p {
+  color: var(--bodyText);
+  margin-bottom: 3.125rem;
+}
+
+.cards-container {
+  display: flex;
+  margin: 3.125rem;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 18.75rem;
+  min-height: 16.3575rem;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+}
+
+.card-ruler {
+  position: absolute;
+  border-bottom: 2px dashed var(--primaryColor);
+  height: 1px; 
+  width: 70%;
+  top: 45px;
+  transform: translate(50%, 50%);
+  right: 50%;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  border-radius: 50%;
+  background: var(--primaryColor);
+  flex: 1;
+}
+
+.card-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 91px;
+  width: 91px;
+}
+
+.circle1 {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  opacity: 0.25;
+}
+
+.circle2 {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  opacity: 0.7;
+}
+
+.circle3 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  color: var(--primaryColorGreen900);
+}
+
+.card h3 {
+  color: var(--primaryColor);
+  margin: 0.9375rem 0;
+}
+
+.card p {
+  align-self: baseline;
 }
