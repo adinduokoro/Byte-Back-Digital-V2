@@ -6,7 +6,7 @@ import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { useSelector } from "react-redux";
 import { ContactImageBlob } from "../../assets/contact-image-blob";
 
-const ContactForm = () => {
+const ContactForm = ({backgroundOn , contactDetailsOn, businessInputOn}) => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
 
   return (
@@ -14,9 +14,10 @@ const ContactForm = () => {
       <div className="container">
         <div className={styles["contact-form-content"]}>
           <div className={styles.left}>
-            <div className={styles["contact-background-image"]}>
+            {backgroundOn ? <div className={styles["contact-background-image"]}>
               <ContactImageBlob />
-            </div>
+            </div> : null}
+            
             <form
               className={`${styles["form-contact"]} ${
                 isDarkModeOn ? styles["form-contact-dark"] : ""
@@ -32,13 +33,14 @@ const ContactForm = () => {
                 maxLength={36}
                 type="text"
               />
-              <input
+              {businessInputOn ? <input
                 className={styles["form-input"]}
                 name="business"
                 placeholder="Business"
                 maxLength={36}
                 type="text"
-              />
+              />  : null}
+             
               <input
                 className={styles["form-input"]}
                 name="email"
@@ -69,7 +71,7 @@ const ContactForm = () => {
               </button>
             </form>
           </div>
-          <div className={styles.right}>
+          {contactDetailsOn ? <div className={styles.right}>
             <img src={contactImg} alt={""} />
             <div className={styles.email}>
               <p>Email:</p>
@@ -79,7 +81,8 @@ const ContactForm = () => {
               <p>Phone:</p>
               <p>+1 (410) 870-5676</p>
             </div>
-          </div>
+          </div> : null}
+          
         </div>
       </div>
     </section>

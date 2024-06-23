@@ -8,7 +8,7 @@
 .contact-form-content {
   display: flex;
   width: 100%;
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 0 2rem;
   justify-content: center;
 }

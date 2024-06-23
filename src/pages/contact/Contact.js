@@ -16,7 +16,7 @@ const Contact = () => {
             className={styles.contact}
             style={{ backgroundColor: "var(--primaryBackgroundColor)" }}
         >
-            <ContactForm />
+            <ContactForm backgroundOn={true} contactDetailsOn={true} businessInputOn={true}/>
         </div>
     );
 };

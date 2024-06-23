@@ -2,8 +2,11 @@ import React from "react";
 import styles from "./QualityQuantity.module.css";
 import { cards } from "./data";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
+import { useSelector } from "react-redux";
 
 const QualityQuantity = () => {
+  const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
   return (
     <section className={styles["quality-quantity"]}>
       <div className="container">
@@ -36,10 +39,8 @@ const QualityQuantity = () => {
               );
             })}
           </div>
-          <button
-            className={`btn-two ${selectIsDarkModeOn ? "btn-two-dark" : ""}`}
-          >
-            VISIT PAGE
+          <button className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}`}>
+            OUR SERVICES
           </button>
         </div>
       </div>
