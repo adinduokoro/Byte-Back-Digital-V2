@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "./Services.module.css";
-import { useParams } from "react-router-dom";
 import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 import { useDispatch } from "react-redux";
-import { WebDesignServices } from "../../components";
+import { CustomerPlanOptions, ServiceUpdates, WebDesignServices } from "../../components";
+import { paymentOptions2 } from "../../components/customerPlanOptions/data";
 
 const Services = () => {
   const dispatch = useDispatch();
@@ -18,6 +18,8 @@ const Services = () => {
       style={{ backgroundColor: "var(--primaryBackgroundColor)" }}
     >
       <WebDesignServices />
+      <ServiceUpdates />
+      <CustomerPlanOptions plans={paymentOptions2}/>
     </div>
   );
 };

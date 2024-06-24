@@ -38,9 +38,8 @@ const WebDesignServices = () => {
               <h2>Search Engine Optimization For 2024</h2>
               <p>
                 If anyone tells you they can get your site on Google's front
-                page in 3 months - <span>RUN!</span>
-                Without exposure from big names like The New York Times, it may
-                take years to rank high.
+                page in 3 months - <span>RUN!</span> Without exposure from big
+                names like The New York Times, it may take years to rank high.
                 <br />
                 <br />
                 We offer state-of-the-art SEO techniques for 2021:

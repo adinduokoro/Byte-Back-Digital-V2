@@ -1,0 +1,13 @@
+.service-updates {
+  min-height: 54.125rem;
+  border: 2px solid pink;
+  z-index: 2;
+}
+
+.service-updates-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  border: 2px solid chartreuse;
+}

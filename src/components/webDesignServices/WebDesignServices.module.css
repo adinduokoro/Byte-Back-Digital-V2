@@ -1,0 +1,38 @@
+.web-design-services{
+margin-bottom: 10rem;
+}
+
+.web-design-services-content{
+    display: flex;
+    flex-direction: column;
+gap: 10rem;
+/* change later */
+}
+
+.web-design-services-content h2{
+    color: var(--tertiaryColor);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.web-design-services-content p{
+    color: var(--bodyText);
+}
+
+.web-design-services-content span{
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.service-one,
+.service-two,
+.service-three{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.service-two{
+    flex-direction: row-reverse;
+}

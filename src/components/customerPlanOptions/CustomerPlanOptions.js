@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./CustomerPlanOptions.module.css";
-import { paymentOptions } from "./data";
 import checkmark from "../../assets/checkmark-outline.svg";
 import { useSelector } from "react-redux";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { Link } from "react-router-dom";
 
-const CustomerPlanOptions = () => {
+const CustomerPlanOptions = ({plans = []}) => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
+
 
   return (
     <section className={styles["customer-plan-options"]}>
@@ -15,7 +15,7 @@ const CustomerPlanOptions = () => {
       <div className="container">
         <div className={styles["customer-plan-options-content"]}>
           <div className={styles["plan-options"]}>
-            {paymentOptions.map((option, index) => (
+            {plans.map((option, index) => (
               <div
                 className={`${styles["plan"]} ${
                   isDarkModeOn ? styles["plan-dark"] : ""

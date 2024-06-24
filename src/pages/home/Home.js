@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.css";
+import { paymentOptions } from "../../components/customerPlanOptions/data";
 import {
   Hero,
   PaymentPlan,
@@ -34,7 +35,7 @@ const Home = () => {
       </div>
       <WhoWeAre />
       {/* <Blog /> */}
-      <CustomerPlanOptions />
+      <CustomerPlanOptions plans={paymentOptions} />
     </div>
   );
 };
