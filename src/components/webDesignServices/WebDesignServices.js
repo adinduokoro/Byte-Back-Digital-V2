@@ -9,9 +9,7 @@ const WebDesignServices = () => {
     <section className={styles["web-design-services"]}>
       <div className="container">
         <div className={styles["web-design-services-content"]}>
-          
-          
-          
+          {/* --------------------------------------- */}
           <div className={styles["service-one"]}>
             <div className={styles.left}>
               <img src={ServiceImg1} alt="" />
