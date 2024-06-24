@@ -23,58 +23,69 @@ const WebDesignServices = () => {
                 frameworks, and page builders. We handcraft each line of code,
                 ensuring full control over the design and optimal performance
                 without the bloat that slows down other sites
-              </p>
-              <p>
-                Handcrafted websites outperform most WordPress and drag-and-drop
-                builder sites, which can be costly. In the online world, speed
-                and organization are key to winning.
+                <br />
+                <br />
+                Handcrafted websites <span>outperform most WordPress</span> and
+                drag-and-drop builder sites, which can be costly. In the online
+                world, speed and organization are key to winning.
               </p>
             </div>
           </div>
-
-
-
-          <div className={styles["service-one"]}>
+          {/* --------------------------------------- */}
+          <div className={styles["service-two"]}>
             <div className={styles.left}>
               <img src={ServiceImg2} alt="" />
             </div>
             <div className={styles.right}>
               <h2>Search Engine Optimization For 2024</h2>
               <p>
-                Our development process is unique because we avoid WordPress,
-                frameworks, and page builders. We handcraft each line of code,
-                ensuring full control over the design and optimal performance
-                without the bloat that slows down other sites
+                If anyone tells you they can get your site on Google's front
+                page in 3 months - <span>RUN!</span>
+                Without exposure from big names like The New York Times, it may
+                take years to rank high.
+                <br />
+                <br />
+                We offer state-of-the-art SEO techniques for 2021:
               </p>
-              <p>
-                Handcrafted websites outperform most WordPress and drag-and-drop
-                builder sites, which can be costly. In the online world, speed
-                and organization are key to winning.
-              </p>
+              <ul>
+                <li>Keyword-Focused Content & Blogging</li>
+                <li>Optimized for Mobile-First Experience</li>
+                <li>Clean and Structured Code for Web Crawlers</li>
+                <li>Fully Responsive Across Mobile, Tablet, & Desktop</li>
+              </ul>
             </div>
           </div>
-
-
-
-          <div className={styles["service-one"]}>
+          {/* --------------------------------------- */}
+          <div className={styles["service-three"]}>
             <div className={styles.left}>
               <img src={ServiceImg3} alt="" />
             </div>
             <div className={styles.right}>
               <h2>Logos, Graphic Design, & Branding</h2>
               <p>
-                Our development process is unique because we avoid WordPress,
-                frameworks, and page builders. We handcraft each line of code,
-                ensuring full control over the design and optimal performance
-                without the bloat that slows down other sites
+                We offer logo and graphic design through our in-house designer.
+                Whether you're looking to update an existing logo or create a
+                new one, we can help build your brand identity.
               </p>
-              <p>
-                Handcrafted websites outperform most WordPress and drag-and-drop
-                builder sites, which can be costly. In the online world, speed
-                and organization are key to winning.
-              </p>
+              <ul>
+                <li>
+                  <h3>Logos Starting at $350</h3>
+                  <p>
+                    Rates may rise depending on the project's complexity, hours
+                    required, and the number of revisions
+                  </p>
+                </li>
+                <li>
+                  <h3>Social Media Graphics</h3>
+                  <p>
+                    Create eye-catching posts with unique custom graphics. Call
+                    us for details on rates and packages.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
+          {/* --------------------------------------- */}
         </div>
       </div>
     </section>
