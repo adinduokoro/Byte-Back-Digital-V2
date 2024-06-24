@@ -15,4 +15,5 @@ export { default as HeaderLayout } from "./layout/HeaderLayout";
 export { default as AboutUs } from "./aboutUs/AboutUs";
 export { default as QualityQuantity } from "./qualityQuantity/QualityQuantity";
 export { default as AboutContact } from "./aboutContact/AboutContact";
+export { default as WebDesignServices } from "./webDesignServices/WebDesignServices";
 export { default as Footer } from "./footer/Footer";

@@ -3,6 +3,7 @@ import styles from "./Services.module.css";
 import { useParams } from "react-router-dom";
 import { SET_CURRENT_PATH } from "../../redux/slice/linkSlice";
 import { useDispatch } from "react-redux";
+import { WebDesignServices } from "../../components";
 
 const Services = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,9 @@ const Services = () => {
     <div
       className={styles.services}
       style={{ backgroundColor: "var(--primaryBackgroundColor)" }}
-    ></div>
+    >
+      <WebDesignServices />
+    </div>
   );
 };
 
