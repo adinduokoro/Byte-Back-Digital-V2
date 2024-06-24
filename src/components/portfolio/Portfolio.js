@@ -10,7 +10,7 @@ const Portfolio = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
 
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <div className="container">
         <div className={styles["portfolio-content"]}>
           <SectionTitle

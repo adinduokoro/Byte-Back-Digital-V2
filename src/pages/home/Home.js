@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 import {
   Hero,
@@ -9,8 +9,18 @@ import {
   Blog,
   CustomerPlanOptions,
 } from "../../components";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+  const portfolioRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#portfolio" && portfolioRef.current) {
+      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <div
       className={styles.home}
@@ -19,7 +29,9 @@ const Home = () => {
       <Hero />
       <WhatWeOffer />
       <PaymentPlan />
-      <Portfolio />
+      <div style={{ width: "100%" }} ref={portfolioRef}>
+        <Portfolio />
+      </div>
       <WhoWeAre />
       {/* <Blog /> */}
       <CustomerPlanOptions />
