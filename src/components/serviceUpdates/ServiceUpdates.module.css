@@ -6,8 +6,39 @@
 
 .service-updates-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
   align-items: center;
   border: 2px solid chartreuse;
+}
+
+.left{
+    max-width: 57.46rem;
+    width: 100%;
+}
+
+.left p {
+    padding-bottom: 3.125rem;
+}
+
+.service-updates-content h2{
+    color: var(--tertiaryColor);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.service-updates-content span{
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+
+.service-updates-content p {
+  color: var(--bodyText);
+
+}
+
+.card h3{
+    color: var(--tertiaryColor);
+    font-weight: 700;
 }
