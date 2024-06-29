@@ -33,7 +33,9 @@ const ServiceUpdates = () => {
             {cards.map((card, index) => {
               return (
                 <div className={styles.card} key={index}>
-                  {/* icon */}
+                  <div className={styles["icon-container"]}>
+                    {/* icon */}
+                  </div>
                   <h3>{card.title}</h3>
                   <p>{card.desc}</p>
                 </div>

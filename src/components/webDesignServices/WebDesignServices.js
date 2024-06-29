@@ -3,6 +3,8 @@ import styles from "./WebDesignServices.module.css";
 import ServiceImg1 from "../../assets/service-img-1.svg";
 import ServiceImg2 from "../../assets/service-img-2.svg";
 import ServiceImg3 from "../../assets/service-img-3.svg";
+import checkmark from "../../assets/check-mark-2.svg"
+
 
 const WebDesignServices = () => {
   return (
@@ -42,13 +44,28 @@ const WebDesignServices = () => {
                 names like The New York Times, it may take years to rank high.
                 <br />
                 <br />
-                We offer state-of-the-art SEO techniques for 2021:
+                We offer state-of-the-art SEO techniques for 2024:
               </p>
               <ul>
-                <li>Keyword-Focused Content & Blogging</li>
-                <li>Optimized for Mobile-First Experience</li>
-                <li>Clean and Structured Code for Web Crawlers</li>
-                <li>Fully Responsive Across Mobile, Tablet, & Desktop</li>
+                <li>
+                  <img src={checkmark} alt="" />
+                  <p>Keyword-Focused Content & Blogging</p>
+                </li>
+                <li>
+                  <img src={checkmark} alt="" />
+
+                  <p>Optimized for Mobile-First Experience</p>
+                </li>
+                <li>
+                  <img src={checkmark} alt="" />
+
+                  <p>Clean and Structured Code for Web Crawlers</p>
+                </li>
+                <li>
+                  <img src={checkmark} alt="" />
+
+                  <p>Responsive Across Mobile, Tablet, & Desktop</p>
+                </li>
               </ul>
             </div>
           </div>
@@ -66,14 +83,19 @@ const WebDesignServices = () => {
               </p>
               <ul>
                 <li>
-                  <h3>Logos Starting at $350</h3>
+                  <h3>
+                    <img src={checkmark} alt="" />
+                    Logos Starting at $350</h3>
                   <p>
                     Rates may rise depending on the project's complexity, hours
                     required, and the number of revisions
                   </p>
                 </li>
                 <li>
-                  <h3>Social Media Graphics</h3>
+
+                  <h3>
+                  <img src={checkmark} alt="" />
+                    Social Media Graphics</h3>
                   <p>
                     Create eye-catching posts with unique custom graphics. Call
                     us for details on rates and packages.

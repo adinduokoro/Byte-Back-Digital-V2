@@ -36,3 +36,32 @@ gap: 10rem;
 .service-two{
     flex-direction: row-reverse;
 }
+
+.service-two ul{
+  margin-top: 1.25rem;
+}
+
+.service-two li{
+display: flex;
+align-items: center;
+white-space: nowrap;
+padding-bottom: 0.625rem;
+gap: 0.625rem;
+}
+
+.service-three ul{
+margin-top: 1.5rem;
+}
+
+.service-three h3{
+gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  color: var(--primaryColor);
+}
+
+.service-three ul p{
+margin-left: 1.89rem;
+margin-bottom: 1.5rem;
+}
+

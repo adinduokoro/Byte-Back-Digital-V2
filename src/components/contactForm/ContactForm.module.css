@@ -35,6 +35,7 @@
 
 
 .form-contact {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   height: 45.5875rem;
