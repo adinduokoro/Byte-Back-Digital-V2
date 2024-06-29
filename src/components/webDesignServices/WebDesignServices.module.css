@@ -37,8 +37,8 @@
   flex-direction: row-reverse;
 }
 
-.service-two .right{
-width: 100%;
+.service-two .right {
+  width: 100%;
 }
 
 .service-two ul {
@@ -66,4 +66,16 @@ width: 100%;
 .service-three ul p {
   margin-left: 1.89rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .web-design-services-content .left img {
+    width: 100%;
+  }
+
+  .service-one,
+  .service-two,
+  .service-three {
+    flex-direction: column;
+  }
 }
