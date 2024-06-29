@@ -1,67 +1,69 @@
-.web-design-services{
-margin-bottom: 10rem;
+.web-design-services {
+  margin-bottom: 10rem;
 }
 
-.web-design-services-content{
-    display: flex;
-    flex-direction: column;
-gap: 10rem;
-/* change later */
+.web-design-services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  /* change later */
 }
 
-.web-design-services-content h2{
-    color: var(--tertiaryColor);
+.web-design-services-content h2 {
+  color: var(--tertiaryColor);
   margin-bottom: 1.25rem;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.web-design-services-content p{
-    color: var(--bodyText);
+.web-design-services-content p {
+  color: var(--bodyText);
 }
 
-.web-design-services-content span{
-    color: var(--primaryColor);
-    font-weight: 700;
+.web-design-services-content span {
+  color: var(--primaryColor);
+  font-weight: 700;
 }
 
 .service-one,
 .service-two,
-.service-three{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+.service-three {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-.service-two{
-    flex-direction: row-reverse;
+.service-two {
+  flex-direction: row-reverse;
 }
 
-.service-two ul{
+.service-two .right{
+width: 100%;
+}
+
+.service-two ul {
   margin-top: 1.25rem;
 }
 
-.service-two li{
-display: flex;
-align-items: center;
-white-space: nowrap;
-padding-bottom: 0.625rem;
-gap: 0.625rem;
+.service-two li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.625rem;
+  gap: 0.625rem;
 }
 
-.service-three ul{
-margin-top: 1.5rem;
+.service-three ul {
+  margin-top: 1.5rem;
 }
 
-.service-three h3{
-gap: 0.625rem;
+.service-three h3 {
+  gap: 0.625rem;
   display: flex;
   align-items: center;
   color: var(--primaryColor);
 }
 
-.service-three ul p{
-margin-left: 1.89rem;
-margin-bottom: 1.5rem;
+.service-three ul p {
+  margin-left: 1.89rem;
+  margin-bottom: 1.5rem;
 }
-
