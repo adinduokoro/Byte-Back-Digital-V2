@@ -32,9 +32,9 @@ const ServiceUpdates = () => {
           <div className={styles.right}>
             {cards.map((card, index) => {
               return (
-                <div className={styles.card} key={index}>
+                <div className={`${styles.card} ${isDarkModeOn ? styles["card-dark"] : ""}`} key={index}>
                   <div className={styles["icon-container"]}>
-                    {/* icon */}
+                    <img src={card.icon} alt="" />
                   </div>
                   <h3>{card.title}</h3>
                   <p>{card.desc}</p>
