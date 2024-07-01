@@ -29,15 +29,17 @@ const Portfolio = () => {
                 <div className={styles["image-container"]}>
                   <img src={portfolio.image} alt="" />
                 </div>
-
                 <h3>{portfolio.title}</h3>
                 <h4>{portfolio.subtitle}</h4>
                 <p>{portfolio.description}</p>
+                <a href={portfolio.link} target="_blank" rel="noreferrer">
                 <button
                   className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}`}
                 >
                   VISIT PAGE
                 </button>
+
+                </a>
               </div>
             ))}
           </div>

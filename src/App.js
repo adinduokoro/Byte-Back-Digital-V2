@@ -6,6 +6,7 @@ import { HeaderLayout, Layout } from "./components";
 import { Home, Contact, About, Services } from "./pages";
 import { useSelector } from "react-redux";
 import { selectIsDarkModeOn } from "./redux/slice/themeSlice";
+import ScrollToTop from "./helpers/ScrollToTop";
 
 function App() {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       <ToastContainer />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

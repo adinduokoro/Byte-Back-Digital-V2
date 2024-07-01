@@ -3,6 +3,7 @@ import styles from "./QualityQuantity.module.css";
 import { cards } from "./data";
 import { selectIsDarkModeOn } from "../../redux/slice/themeSlice";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const QualityQuantity = () => {
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
@@ -39,9 +40,11 @@ const QualityQuantity = () => {
               );
             })}
           </div>
+          <Link to="/services">
           <button className={`btn-two ${isDarkModeOn ? "btn-two-dark" : ""}`}>
             OUR SERVICES
           </button>
+          </Link>
         </div>
       </div>
     </section>
