@@ -14,8 +14,8 @@ const Footer = () => {
   const dispatch = useDispatch();
   const isDarkModeOn = useSelector(selectIsDarkModeOn);
 
-  const date = new Date()
-  const year = date.getFullYear()
+  const date = new Date();
+  const year = date.getFullYear();
 
   const handleToggle = () => {
     dispatch(SET_DARK_MODE(!isDarkModeOn));
@@ -105,11 +105,16 @@ const Footer = () => {
                 <h2>Services</h2>
                 <div className={styles.ruler}></div>
                 <ul>
+                  <a
+                    href="https://www.bytebackdigital.com/billing/index.php?rp=/store/cloud-hosting"
+                    target="_blank"
+                  >
+                    <li>Web Hosting</li>
+                  </a>
                   <li>Web Design</li>
                   <li>Website Maintenance</li>
                   <li>SEO Services</li>
                   <li>Content Creation</li>
-                  <li>Logo Design</li>
                 </ul>
               </div>
             </div>
